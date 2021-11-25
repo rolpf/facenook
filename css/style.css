@@ -1,0 +1,106 @@
+
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.logo {
+  position: absolute;
+    top: 23%;
+    left: 48%;
+    height: 70px;
+    z-index: 1;
+    justify-content: center;
+    background-color: #DE8E4F;
+    border-radius: 50px;
+}
+
+form {
+  background-color: #DE8E4F;
+  border-radius: 50px;   
+  align-self: center; 
+  padding: 40px;
+  text-align: center;
+  width: 35%;  
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+
+
+
+  /* border: 5px solid white; */
+  /* box-shadow: 10px 5px 5px black; */
+}
+
+legend {
+  font-size: 50px;
+  color: wh;
+  font-family: 'Montserrat';
+  justify-content: center;
+  display: flex;
+}
+
+/* boutton formulaire */ 
+
+
+#login, button {
+  text-align: center;
+  border-radius: 50px;
+  border: none;
+  height: 40px;
+  width: 300px;
+  background-color: white; 
+  border: none; 
+  cursor: pointer;
+  margin-bottom: 20px;
+  margin-top: 20px;
+
+}
+
+#password, button {
+  text-align: center;
+  border-radius: 50px;
+  border: none;
+  height: 40px;
+  width: 300px;
+  background-color: white;  
+  border: none; 
+  cursor: pointer;
+  /* float: left;
+} */
+}
+
+#submit, button {
+  border-radius: 50px;
+  border: none;
+  height: 40px;
+  width: 100px;
+  background-color: white;  
+  cursor: pointer;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+#submit:hover {
+  color: #DE8E4F;
+}
+
+.rememberme {
+  display: flex ;
+  margin-top: 20px;
+}
+
+
+.formulaire {
+ display: flex;
+ justify-content: center;
+}
+
