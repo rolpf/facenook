@@ -10,7 +10,25 @@ html {
   font-size: 62.5%;
 }
 
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    /* background-image: url(../img/1075221.jpg); */
+    background-color: #F9F5E4;
+    background-size: cover;
+    font-family: 'Montserrat';
+}
+
+
+/* CSS DU FORMULAIRE */
+
+/* connexion css  */
+
 .logo {
+ 
   position: absolute;
     top: 23%;
     left: 48%;
@@ -18,14 +36,14 @@ html {
     z-index: 1;
     justify-content: center;
     background-color: #DE8E4F;
-    border-radius: 50px;
+    border-radius: 50px; 
 }
 
 form {
   background-color: #DE8E4F;
   border-radius: 50px;   
   align-self: center; 
-  padding: 40px;
+  padding: 40px ;
   text-align: center;
   width: 35%;  
   justify-content: center;
@@ -103,4 +121,103 @@ legend {
  display: flex;
  justify-content: center;
 }
+
+/* inscription formualaire */ 
+
+.inscription {
+  display: flex;
+ justify-content: center;
+}
+
+#input_prenom, button {
+  text-align: center;
+  border-radius: 50px;
+  border: none;
+  height: 40px;
+  width: 300px;
+  background-color: white; 
+  border: none; 
+  cursor: pointer;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+#input_nom, button {
+  text-align: center;
+  border-radius: 50px;
+  border: none;
+  height: 40px;
+  width: 300px;
+  background-color: white; 
+  border: none; 
+  cursor: pointer;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+#input_email, button {
+  text-align: center;
+  border-radius: 50px;
+  border: none;
+  height: 40px;
+  width: 300px;
+  background-color: white; 
+  border: none; 
+  cursor: pointer;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+#input_password, button {
+  text-align: center;
+  border-radius: 50px;
+  border: none;
+  height: 40px;
+  width: 300px;
+  background-color: white; 
+  border: none; 
+  cursor: pointer;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+#input_submit, button {
+  border-radius: 50px;
+  border: none;
+  height: 40px;
+  width: 100px;
+  background-color: white;  
+  cursor: pointer;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+#input_submit:hover {
+  color: #DE8E4F;
+}
+
+.logo-inscription {
+  position: absolute;
+    top: 3%;
+    left: 48%;
+    height: 70px;
+    z-index: 1;
+    justify-content: center;
+    background-color: #DE8E4F;
+    border-radius: 50px;
+}
+@media only screen and (max-width: 450px) {
+  form{
+    padding: 100%;
+  }
+  .logo-inscription,.logo{
+    
+  }
+}
+
+
+
+
+
+
 
