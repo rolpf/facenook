@@ -4,12 +4,12 @@
 // a l'iut ipabdd
 $host = "localhost"; // le chemin vers le serveur (localhost dans 99% des cas)
 
-// nom de la base de donnée
+// nom de la base de données
 // A l IUT, prenomnom 
 // ordi perso, a vous de le créer.
 $db = "facenook";
 
-// identifiant de la base de donnée
+// identifiant de la base de données
 // A l iut prenom.nom
 // windows : root
 // Mac : root

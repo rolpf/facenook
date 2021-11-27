@@ -9,4 +9,5 @@
   <input type="password" name="mdp" placeholder="Mot de passe" required>
   <input type="submit" name="valider" value="Inscription">
 </form>
+
 @endsection

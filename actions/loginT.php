@@ -2,11 +2,11 @@
 
 // vérifier les données recues.
 
-if (!isset($_POST['user']) || !isset($_POST['mdp'])) {
+if (!isset($_POST['user']) || !isset($_POST['mdp'])) { 
   header('location: index.php?action=login');
 } else {
-  $sql = "select * from user where login=? and mdp=sha1(?)";
-  $query = $pdo->prepare($sql);
+  $sqlConnect = "select * from user where login=? and mdp=sha1(?)";
+  $query = $pdo->prepare($sqlConnect);
   $query->execute(array($_POST['user'],$_POST['mdp']));
   $user = $query->fetch();
 
@@ -28,5 +28,4 @@ if (!isset($_POST['user']) || !isset($_POST['mdp'])) {
     $query->execute([$token,$_SESSION['id']]);
     header('location: index.php?action=index');
   }
-
 }
