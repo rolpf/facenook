@@ -26,6 +26,6 @@ if (!isset($_POST['user']) || !isset($_POST['mdp'])) {
     $sql = "update user set remember=? where id=?";
     $query = $pdo->prepare($sql);
     $query->execute([$token,$_SESSION['id']]);
-    header('location: index.php?action=index');
+    header('location: index.php?action=profil');
   }
 }

@@ -44,4 +44,3 @@ if (!empty($_POST['user']) && /*!empty($_POST['nom']) && !empty($_POST['prenom']
     echo "email incorrect";
 }
 }
-  ?>
