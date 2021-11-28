@@ -9,20 +9,21 @@ if (!empty($_POST['user']) && /*!empty($_POST['nom']) && !empty($_POST['prenom']
     $mdp = sha1($_POST['mdp']); // hachage du mot de passe pour plus de sécurité
     $email = htmlspecialchars($_POST['email']);
       try{
-        $sql = "INSERT INTO user VALUES('$user',/*'$nom', '$prenom',*/PASSWORD('$mdp'),'$email',NULL,'default.jpg')";
-        $query = $pdo->prepare($sql);
+        //$sqlAjout = "INSERT INTO user VALUES('$user','$mdp','$email',NULL,NULL)"; /*'$nom', '$prenom',*/
+        $sqlAjout = "INSERT INTO user (login, mdp, email, remember, avatar) VALUES ('$user','$mdp','$email',NULL,NULL)";
+        $query = $pdo->prepare($sqlAjout);
         $query->execute();
 
 
-        $sql1 = "SELECT * FROM user WHERE email=?";
+        //$sql1 = "SELECT * FROM user WHERE email=?";
 
         // Etape 1  : preparation
-        $query = $pdo->prepare($sql1);
+        //$query = $pdo->prepare($sql1);
         // Etape 2 : execution : 2 paramètres dans la requêtes !!
-        $query->execute(array($email));
+        //$query->execute(array($email));
         // Etape 3 : ici le login est unique, donc on sait que l'on peut avoir zero ou une  seule ligne.
         // un seul fetch
-        $line = $query->fetch();
+        //$line = $query->fetch();
 
         //session_start();
         //$_SESSION['id'] = $line['id'];
@@ -31,14 +32,15 @@ if (!empty($_POST['user']) && /*!empty($_POST['nom']) && !empty($_POST['prenom']
         //$_SESSION['nom'] = $line['nom'];
         //$_SESSION['prenom'] = $line['prenom'];
         //$_SESSION['avatar'] = "default.jpg";
-        header('Location: index.php?action=profil');
+        header('Location: index.php?action=index');
+        // echo "t inscrit";
       } catch (Exception $e) {
         $_SESSION['erreurinscription'] = 'Cette adresse mail est déjà utilisée !';
-        header('Location: index.php?action=index');
+        echo "adresse mail déjà utilisée";
+        echo $e;
         }
     }else{
     $_SESSION['erreurinscription'] = 'Le format de votre adresse e-mail est incorrect !';
-    header('Location: index.php?action=index');
+    echo "email incorrect";
 }
 }
-  ?>

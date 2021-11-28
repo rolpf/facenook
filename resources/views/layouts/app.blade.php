@@ -22,6 +22,10 @@
     <a href="index.php">Accueil</a>
 
     <a href="index.php?action=page2">Page 2</a>
+    @isset($_SESSION['id'])
+        <a href='index.php?action=profil'>Profil</a>
+    @endisset
+
 
     @isset($_SESSION['id'])
         Bonjour  {{$_SESSION['login']}} <a href='index.php?action=deconnexion'>Deconnexion</a></li>
