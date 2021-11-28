@@ -1,7 +1,6 @@
 @extends('layouts.app')
 
 @section('content')
-    <div class="profil">
-        
-    </div>
-@endsection
+<div class="profil">
+
+@endsection 
