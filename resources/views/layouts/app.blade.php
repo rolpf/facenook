@@ -12,13 +12,17 @@
 <body>
 <header>Facenook</header>
 
+
+
+
+
 @isset($_SESSION['info'])
     <div>
         <strong>Information : </strong> {{$_SESSION['info']}}
     </div>
 @endisset
 
-<nav>
+<nav class="vertical-menu">
     <a href="index.php">Accueil</a>
 
     <a href="index.php?action=page2">Page 2</a>
