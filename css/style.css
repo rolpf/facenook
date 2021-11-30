@@ -229,7 +229,7 @@ legend {
   text-decoration: none; /* Remove underline from links */
   border-radius: 30px;
   margin-top: 20px;
-  margin-right: 75%;
+  margin-right: 80%;
   text-align: center;
 }
 
@@ -237,4 +237,6 @@ legend {
   background-color: #ccc; /* Dark grey background on mouse-over */
 }
 
-
+.icone-vertical-menu {
+  width: 50%;
+}

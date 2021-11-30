@@ -8,3 +8,5 @@
 /httpRequests/
 #cache
 /cache
+# Images
+/css/img
