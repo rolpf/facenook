@@ -35,6 +35,6 @@
     @yield("content")
 </main>
 
-<footer>pied de page</footer>
+<!-- <footer>pied de page</footer> -->
 </body>
 </html>
