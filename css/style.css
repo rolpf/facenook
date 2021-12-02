@@ -16,7 +16,7 @@ body {
     flex-direction: column;
     justify-content: center;
     height: 100vh;
-    background-color :#F9F5E4;
+    /* background-color :#F9F5E4; */
     background-size: cover;
     font-family: 'Montserrat';
     
@@ -249,7 +249,6 @@ legend {
 }
 
 .partie-gauche {
-
   background-color: #57BCA8;
   float: left;
   overflow: hidden;
@@ -258,21 +257,12 @@ legend {
 
 }
 
-/* .partie-gauche img{
-  margin-top: -20px;
-} */
 
 .partie-gauche h2{
   text-align: center;
   margin-top: 20px;
   font-size: 60px;
 }
-
-/* .partie-gauche h2:hover {
-  color: aquamarine;
-} */
-
-
 
  /* PROFIL CSS  */
 
@@ -291,7 +281,8 @@ legend {
   background-color: white;
   float: left;
   border-right: 5px solid;
-  border-color: #57BCA8;
+  border-color: #57BCA8
+
   
  }
 
