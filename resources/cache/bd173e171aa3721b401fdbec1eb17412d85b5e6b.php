@@ -23,6 +23,10 @@
     <a href="index.php">Accueil</a>
 
     <a href="index.php?action=page2">Page 2</a>
+    <?php if(isset($_SESSION['id'])): ?>
+        <a href='index.php?action=profil'>Profil</a>
+    <?php endif; ?>
+
 
     <?php if(isset($_SESSION['id'])): ?>
         Bonjour  <?php echo e($_SESSION['login']); ?> <a href='index.php?action=deconnexion'>Deconnexion</a></li>
