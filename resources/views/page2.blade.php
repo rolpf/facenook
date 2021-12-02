@@ -1,6 +1,28 @@
 @extends('layouts.app')
 
 @section('content')
-    <p>Et voici la page 2</p>
-    @yield('recherche')
+    <section class="container-profil">
+        <div class="menu-gauche">
+            <h3>Yeah</h3>
+
+        </div>
+
+        <div class="profil">
+            <div bio>
+                <img class="pdp" src="">
+                    <ul>
+                        
+                    </ul>
+            </div>
+
+        </div>
+
+        <div class="menu-droite">
+            
+
+        </div>
+
+
+
+    </section>
 @endsection

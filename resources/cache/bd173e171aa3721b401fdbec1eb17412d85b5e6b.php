@@ -33,6 +33,7 @@
     <?php else: ?>
         <a href='index.php?action=login'>Login</a>
         <a href='index.php?action=signin'>Inscription</a>
+        <a href="index.php?action=404">404</a>
     <?php endif; ?>
 </nav>
 
@@ -40,6 +41,6 @@
     <?php echo $__env->yieldContent("content"); ?>
 </main>
 
-<footer>pied de page</footer>
+<!-- <footer>pied de page</footer> -->
 </body>
 </html>

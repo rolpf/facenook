@@ -16,10 +16,10 @@ body {
     flex-direction: column;
     justify-content: center;
     height: 100vh;
-    /* background-image: url(../img/1075221.jpg); */
-    background-color: #F9F5E4;
+    background-color :#F9F5E4;
     background-size: cover;
     font-family: 'Montserrat';
+    
 }
 
 
@@ -27,17 +27,19 @@ body {
 
 /* connexion css  */
 
+
 .logo {
- 
   position: absolute;
-    top: 23%;
+    top: 24%;
     left: 48%;
     height: 70px;
     z-index: 1;
     justify-content: center;
     background-color: #DE8E4F;
-    border-radius: 50px; 
+    border-radius: 50px;
 }
+
+
 
 form {
   background-color: #DE8E4F;
@@ -206,14 +208,117 @@ legend {
     background-color: #DE8E4F;
     border-radius: 50px;
 }
+/*repsonsive*/ 
+
 @media only screen and (max-width: 450px) {
   form{
     padding: 100%;
   }
-  .logo-inscription,.logo{
-    
-  }
 }
+
+/* ACCEUIL  */
+
+.partie-droite {
+  background-color: #F9F5E4;
+  width: 50%;
+  height: 100vh;
+  float: right;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.partie-droite a{
+  justify-content: center;
+  text-decoration: none;
+   display: flex; 
+  font-size: 30px;
+  border-radius: 50px;
+  background-color: #DE8E4F;
+  width: 280px;
+  height: 80px;
+  text-align: center;
+  color: black;
+  padding-top: 20px; 
+  margin-top: 20px;
+}
+
+.partie-droite a:hover {
+  color: #57BCA8;
+}
+
+.partie-gauche {
+
+  background-color: #57BCA8;
+  float: left;
+  overflow: hidden;
+  width: 50%;
+  height: 100vh;
+
+}
+
+/* .partie-gauche img{
+  margin-top: -20px;
+} */
+
+.partie-gauche h2{
+  text-align: center;
+  margin-top: 20px;
+  font-size: 60px;
+}
+
+/* .partie-gauche h2:hover {
+  color: aquamarine;
+} */
+
+
+
+ /* PROFIL CSS  */
+
+ .menu-gauche {
+   background-color: #F9F5E4 ;
+   width: 20%;   /*largeur*/  
+   height: 100vh; /*hauteur*/ 
+  float: left;
+  border-right: 5px solid;
+  color: #57BCA8;
+ }
+
+ .profil {
+  width: 60%;
+  height: 100vh;
+  background-color: white;
+  float: left;
+  border-right: 5px solid;
+  border-color: #57BCA8;
+  
+ }
+
+ .menu-droite {
+  background-color: #F9F5E4 ;
+  width: 20%;   /*largeur*/  
+  height: 100vh; /*hauteur*/ 
+  float: right;
+ }
+
+
+ /* page 404 */ 
+
+ .error-page h1{
+   color :#DE8E4F;
+   font-size: 200px;
+   display: flex;
+   justify-content: center;
+ }
+
+
+
+
+
+
+
+
 
 
 
