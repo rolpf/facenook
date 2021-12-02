@@ -16,7 +16,7 @@ body {
     flex-direction: column;
     justify-content: center;
     height: 100vh;
-    background-color :#F9F5E4;
+    /* background-color :#F9F5E4; */
     background-size: cover;
     font-family: 'Montserrat';
     
@@ -291,7 +291,8 @@ legend {
   background-color: white;
   float: left;
   border-right: 5px solid;
-  border-color: #57BCA8;
+  border-color: #57BCA8
+
   
  }
 
