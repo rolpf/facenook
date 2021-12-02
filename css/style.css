@@ -16,8 +16,7 @@ body {
     flex-direction: column;
     justify-content: center;
     height: 100vh;
-    /* background-image: url(../img/1075221.jpg); */
-    background-color: #F9F5E4;
+    background-color :#F9F5E4;
     background-size: cover;
     font-family: 'Montserrat';
     
@@ -28,17 +27,19 @@ body {
 
 /* connexion css  */
 
+
 .logo {
- 
   position: absolute;
-    top: 23%;
+    top: 24%;
     left: 48%;
     height: 70px;
     z-index: 1;
     justify-content: center;
     background-color: #DE8E4F;
-    border-radius: 50px; 
+    border-radius: 50px;
 }
+
+
 
 form {
   background-color: #DE8E4F;
@@ -301,10 +302,17 @@ legend {
   float: right;
  }
 
- .marie img {
-   height: 10px;
 
+ /* page 404 */ 
+
+ .error-page h1{
+   color :#DE8E4F;
+   font-size: 200px;
+   display: flex;
+   justify-content: center;
  }
+
+
 
 
 

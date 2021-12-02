@@ -1,5 +1,11 @@
 @extends('layouts.app')
 @section('content')
-    Erreur <br />
-    404... Page introuvable...
+    
+<div class="error-page">
+    <h1>404 </h1>
+    <!-- <img src="css/img/Resetti.png"> -->
+</div>
+
+    
+
 @endsection
