@@ -2,4 +2,5 @@
 
 @section('content')
     <p>Et voici la page 2</p>
+    @yield('recherche')
 @endsection
