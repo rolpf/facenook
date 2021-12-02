@@ -216,7 +216,7 @@ legend {
   }
 }
 
-/* ACCEUIL  */
+/* ACCUEIL  */
 
 .partie-droite {
   background-color: #F9F5E4;
@@ -304,16 +304,8 @@ legend {
  }
 
 
+/* SEARCH BAR RECHERCHE */
 
-
-
-
-
-
-
-
-
-
-
-
-
+.searchbar:hover {
+  background-color: black;
+}
