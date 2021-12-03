@@ -42,7 +42,7 @@
       <input type="text" placeholder="Chercher un utilisateur" name="search">
       <button type="submit"><i class="fa fa-search"></i></button>
     </form>
-  </div> 
+  </div>   
     @endisset
 
 </nav>
