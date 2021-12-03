@@ -35,17 +35,17 @@
         <a href='index.php?action=signin'>Inscription</a>
         <a href="index.php?action=404">404</a>
     @endif
+</nav>
 
-    @isset($_SESSION['id'])
+@isset($_SESSION['id'])
     <div class="searchbar">
     <form action="">
+         <!--<input type='hidden' name='' value='recherche'>-->
       <input type="text" placeholder="Chercher un utilisateur" name="search">
       <button type="submit"><i class="fa fa-search"></i></button>
     </form>
   </div>   
     @endisset
-
-</nav>
 
 <main class="container">
     @yield("content")

@@ -326,11 +326,9 @@ background-color: pink;
 width: 20%;
 height: 20%;
 display:flex;
-justify-content: center;
 border-radius: 50px; 
-  align-self: center; 
-  padding: 2% ;
+  align-self: end;
+  padding-left: 1%  ;
   text-align: center;
   align-items: center;
-  float:right;
 }

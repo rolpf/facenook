@@ -36,17 +36,17 @@
         <a href='index.php?action=signin'>Inscription</a>
         <a href="index.php?action=404">404</a>
     <?php endif; ?>
+</nav>
 
-    <?php if(isset($_SESSION['id'])): ?>
+<?php if(isset($_SESSION['id'])): ?>
     <div class="searchbar">
     <form action="">
+         <!--<input type='hidden' name='' value='recherche'>-->
       <input type="text" placeholder="Chercher un utilisateur" name="search">
       <button type="submit"><i class="fa fa-search"></i></button>
     </form>
   </div>   
     <?php endif; ?>
-
-</nav>
 
 <main class="container">
     <?php echo $__env->yieldContent("content"); ?>
