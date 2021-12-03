@@ -12,6 +12,10 @@
 <body>
 <header>Facenook</header>
 
+
+
+
+
 <?php if(isset($_SESSION['info'])): ?>
     <div>
         <strong>Information : </strong> <?php echo e($_SESSION['info']); ?>
@@ -19,8 +23,8 @@
     </div>
 <?php endif; ?>
 
-<nav>
-    <a href="index.php">Accueil</a>
+<nav class="vertical-menu">
+    <a href="index.php"><img src="css/img/icon_home.png" alt="Accueil" class="icone-vertical-menu"></a>
 
     <a href="index.php?action=page2">Page 2</a>
     <?php if(isset($_SESSION['id'])): ?>

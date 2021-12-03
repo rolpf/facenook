@@ -311,9 +311,28 @@ legend {
 
 
 
+/* MENU VERTICAL */
 
+.vertical-menu {
+  width: 20%; /* taille du menu */
+}
 
+.vertical-menu a {
+  background-color: #867B67; /* Grey background color */
+  color: white; /* Black text color */
+  display: block; /* Make the links appear below each other */
+  padding: 12px; /* Add some padding */
+  text-decoration: none; /* Remove underline from links */
+  border-radius: 30px;
+  margin-top: 20px;
+  margin-right: 80%;
+  text-align: center;
+}
 
+.vertical-menu a:hover {
+  background-color: #ccc; /* Dark grey background on mouse-over */
+}
 
-
-
+.icone-vertical-menu {
+  width: 50%;
+}
