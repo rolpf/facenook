@@ -324,11 +324,13 @@ legend {
 .searchbar {
 background-color: pink;
 width: 20%;
-height: 20%;
+height: 10%;
 display:flex;
 border-radius: 50px; 
   align-self: end;
   padding-left: 1%  ;
   text-align: center;
   align-items: center;
+  position: fixed;
+  top: 20px;
 }
