@@ -12,7 +12,7 @@
   <legend>Connexion</legend>
 
   <input type='text' name='user' placeholder='identifiant' id="login">
-  <input type='password' name='pwd' placeholder='Mot de passe' id="password">
+  <input type='password' name='mdp' placeholder='Mot de passe' id="password">
 
   <!-- <label for="rememberme"> Se souvenir de moi ?</label>
   <input type="checkbox" id="rememberme" name="rememberme" value="rememberme" class="rememberme"> -->
