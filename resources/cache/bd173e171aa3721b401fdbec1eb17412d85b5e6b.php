@@ -7,6 +7,7 @@
     <title><?php echo e($title); ?></title>
     <link href="css/style.css" rel="stylesheet">
     <link href="css/typo.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
@@ -35,6 +36,16 @@
         <a href='index.php?action=signin'>Inscription</a>
         <a href="index.php?action=404">404</a>
     <?php endif; ?>
+
+    <?php if(isset($_SESSION['id'])): ?>
+    <div class="searchbar">
+    <form action="">
+      <input type="text" placeholder="Chercher un utilisateur" name="search">
+      <button type="submit"><i class="fa fa-search"></i></button>
+    </form>
+  </div> 
+    <?php endif; ?>
+
 </nav>
 
 <main class="container">
