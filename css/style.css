@@ -315,6 +315,7 @@ legend {
 
 .vertical-menu {
   width: 20%; /* taille du menu */
+  position: fixed;
 }
 
 .vertical-menu a {
