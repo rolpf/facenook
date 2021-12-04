@@ -324,7 +324,7 @@ legend {
   display: block; /* Make the links appear below each other */
   padding: 12px; /* Add some padding */
   text-decoration: none; /* Remove underline from links */
-  border-radius: 30px;
+  border-radius: 50px;
   margin-top: 20px;
   margin-right: 80%;
   text-align: center;
@@ -335,5 +335,5 @@ legend {
 }
 
 .icone-vertical-menu {
-  width: 50%;
+  width: 60%;
 }

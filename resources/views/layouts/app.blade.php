@@ -10,7 +10,7 @@
 </head>
 
 <body>
-<header>Facenook</header>
+<header></header>
 
 
 
@@ -32,10 +32,8 @@
 
 
     @isset($_SESSION['id'])
-        Bonjour  {{$_SESSION['login']}} <a href='index.php?action=deconnexion'>Deconnexion</a></li>
+        Bonjour  {{$_SESSION['login']}} <a href='index.php?action=deconnexion'><img src="css/img/icon_deconnexion.png" alt="Accueil" class="icone-vertical-menu"></a></li>
     @else
-        <a href='index.php?action=login'>Login</a>
-        <a href='index.php?action=signin'>Inscription</a>
         <a href="index.php?action=404">404</a>
     @endif
 </nav>
