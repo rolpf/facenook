@@ -39,9 +39,9 @@
 
 @isset($_SESSION['id'])
     <div class="searchbar">
-    <form action="">
+    <form action="actions/rechercheT.php" method="GET">
          <!--<input type='hidden' name='' value='recherche'>-->
-      <input type="text" placeholder="Chercher un utilisateur" name="search">
+      <input type="text" placeholder="Chercher un utilisateur" name="recherche">
       <button type="submit"><i class="fa fa-search"></i></button>
     </form>
   </div>   

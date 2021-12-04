@@ -6,12 +6,9 @@
         </div>
 
         <div class="recherche">
-            <div bio>
-                <img class="pdp" src="">
+            <h1 class="searchTitle">Voici le résultat de votre recherche</h1>
                     <ul>
-                        
                     </ul>
-            </div>
 
         </div>
 
