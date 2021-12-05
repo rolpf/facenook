@@ -11,5 +11,6 @@ $listeDesActions = array(
     "creationT" => "actions/creationT.php",
     "profil" => "actions/profil.php",
     "timeline" => "actions/timeline.php",
+    "postingT" => "actions/postingT.php",
 
 );
