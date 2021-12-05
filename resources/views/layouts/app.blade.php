@@ -21,21 +21,19 @@
         <strong>Information : </strong> {{$_SESSION['info']}}
     </div>
 @endisset
-
+@isset($_SESSION['id'])
 <nav class="vertical-menu">
     <a href="index.php"><img src="css/img/icon_home.png" alt="Accueil" class="icone-vertical-menu"></a>
 
     <a href="index.php?action=page2">Page 2</a>
-    @isset($_SESSION['id'])
+
         <a href='index.php?action=profil'>Profil</a>
     @endisset
 
 
     @isset($_SESSION['id'])
         Bonjour  {{$_SESSION['login']}} <a href='index.php?action=deconnexion'><img src="css/img/icon_deconnexion.png" alt="Accueil" class="icone-vertical-menu"></a></li>
-    @else
-        <a href="index.php?action=404">404</a>
-    @endif
+    @endisset
 </nav>
 
 <main class="container">
