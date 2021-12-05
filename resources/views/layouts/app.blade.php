@@ -29,7 +29,7 @@
 
         <a href='index.php?action=profil'>Profil</a>
 
-        <a href="index.php?action=page2">Ami +</a>
+        <a href="index.php?action=page2"><img src="css/img/icon_people.png" alt="AjoutAmi" class="icone-vertical-menu"></a>
     @endisset
 
 

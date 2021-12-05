@@ -1,2 +1,2 @@
 <?php
-echo $blade->make("page2")->render();
+echo $blade->make("page2",["title"=>"Demande d'amis - Facenook"])->render();

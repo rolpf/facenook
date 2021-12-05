@@ -1,6 +1,29 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="profil">
+    <section class="container-profil">
+        <div class="menu-gauche">
+            <h3></h3>
 
-@endsection 
+        </div>
+
+        <div class="profil">
+        <h1 class="title-page">Profil</h1>
+            <div bio>
+                <img class="pdp" src="">
+                    <ul>
+                        
+                    </ul>
+            </div>
+
+        </div>
+
+        <div class="menu-droite">
+            
+
+        </div>
+
+
+
+    </section>
+@endsection

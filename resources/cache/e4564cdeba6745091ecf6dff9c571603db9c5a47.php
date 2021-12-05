@@ -1,5 +1,28 @@
 <?php $__env->startSection('content'); ?>
-<div class="profil">
+    <section class="container-profil">
+        <div class="menu-gauche">
+            <h3></h3>
 
-<?php $__env->stopSection(); ?> 
+        </div>
+
+        <div class="profil">
+        <h1 class="title-page">Profil</h1>
+            <div bio>
+                <img class="pdp" src="">
+                    <ul>
+                        
+                    </ul>
+            </div>
+
+        </div>
+
+        <div class="menu-droite">
+            
+
+        </div>
+
+
+
+    </section>
+<?php $__env->stopSection(); ?>
 <?php echo $__env->make('layouts.app', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
