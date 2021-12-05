@@ -295,13 +295,65 @@ legend {
 
 
  /* page 404 */ 
+.error-page {
+  margin: 80px;
+  /* display: flex; */
+  float: left;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+ 
+}
 
  .error-page h1{
    color :#DE8E4F;
    font-size: 200px;
-   display: flex;
-   justify-content: center;
+   padding: 10px;
+   
  }
+
+ .error-page a{
+  background-color: #DE8E4F;
+  font-size: 30px;
+  border-radius: 50px;
+  width: 280px;
+  height: 80px;
+  text-decoration: none;
+  padding-top: 20px; 
+  margin-top: 20px;
+  display: flex;
+  text-align: center;
+ justify-content: center;
+ color: black;
+ padding-top: 20px;
+ }
+
+ .error-page h2{
+    font-size: 23px;
+    padding-bottom: 20px;
+    font-weight: bold;
+ }
+
+ .error-page p {
+   font-size: 20px;
+ }
+
+
+ .error-img img{
+  position: relative;
+  top: 900px;
+  left: 34px;
+ }
+
+ .img{
+  position: absolute;
+  top: 27%;
+  left: 52%;
+  height: 300px;
+  z-index: 1;
+  justify-content: center; 
+ }
+
 
 
 
