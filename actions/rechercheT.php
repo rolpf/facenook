@@ -7,10 +7,11 @@ if (isset($_GET['recherche']) && !empty($_GET['recherche'])) {
     $recherche = htmlspecialchars(strtolower($_GET['recherche']));
     //echo "<h2> Résultats de la recherche pour : $recherche</h2>";
     //$sqlConnect = "select * from user where login LIKE %$recherche%";
-    $sql='SELECT * FROM user WHERE lower(login)=? ';
+    echo $recherche;
+   $sql= "select * from user where login LIKE ?";
     $query = $pdo->prepare($sql);
-    $query->execute(array($_POST['login']));
-    $searchResult = $query->fetch();
+    $query->execute(array($_GET['login']));
+    //$searchResult = $query->fetch();
 }
 
 

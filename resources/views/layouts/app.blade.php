@@ -41,7 +41,7 @@
     <div class="searchbar">
     <form action="actions/rechercheT.php" method="GET">
          <!--<input type='hidden' name='' value='recherche'>-->
-      <input type="text" placeholder="Chercher un utilisateur" name="recherche">
+      <input name="recherche" type="text" placeholder="Chercher un utilisateur">
       <button type="submit"><i class="fa fa-search"></i></button>
     </form>
   </div>   
