@@ -18,7 +18,7 @@
   <input type="checkbox" id="rememberme" name="rememberme" value="rememberme" class="rememberme"> -->
   
   
-  <input type='submit' name='connecter' value='Login in'id='submit'>
+  <input type='submit' name='connecter' value='Connexion'id='submit'>
 
 </form>
 </div>
