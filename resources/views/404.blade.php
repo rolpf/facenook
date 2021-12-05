@@ -1,7 +1,11 @@
 @extends('layouts.app')
 @section('content')
 
-<p>404</p>
+<div class="page-error">
+    <p>404</p>
+   
+</div>
+
 
 
 @endsection
