@@ -19,7 +19,7 @@
 @endisset
 
 <nav>
-    <a href="index.php">Accueil</a>
+    <a href="index.php?action=timeline">Accueil</a>
 
     <a href="index.php?action=page2">Page 2</a>
     @isset($_SESSION['id'])
