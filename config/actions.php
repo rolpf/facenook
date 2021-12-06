@@ -9,6 +9,8 @@ $listeDesActions = array(
     "deconnexion" => "actions/logoutT.php",
     "signin" => "actions/signin.php", // inscription
     "creationT" => "actions/creationT.php",
-    "profil" => "actions/profil.php"
+    "profil" => "actions/profil.php",
+    "recherche" => "actions/recherche.php",
+    "rechercheT" => "actions/rechercheT.php",
 
 );

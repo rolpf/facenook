@@ -1,4 +1,5 @@
 @extends('layouts.app')
+@extends('recherche')
 @section('content')
 
 <div class="page-error">

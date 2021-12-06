@@ -11,15 +11,18 @@ html {
 }
 
 body {
-    margin: 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 100vh;
+    padding-top: 25px;
     /* background-color :#F9F5E4; */
     background-size: cover;
     font-family: 'Montserrat';
     
+}
+
+nav {
+  height: 10%;
 }
 
 
@@ -29,19 +32,19 @@ body {
 
 
 .logo {
-  position: absolute;
-    top: 24%;
-    left: 48%;
+    margin: 0 auto;
+    top: -35px;
     height: 70px;
     z-index: 1;
     justify-content: center;
     background-color: #DE8E4F;
     border-radius: 50px;
+    position: relative;
 }
 
 
 
-form {
+/*form {
   background-color: #DE8E4F;
   border-radius: 50px;   
   align-self: center; 
@@ -52,13 +55,25 @@ form {
   align-items: center;
   position: relative;
   display: flex;
-  flex-direction: column;
-
-
-
+  flex-direction: column;*/
   /* border: 5px solid white; */
-  /* box-shadow: 10px 5px 5px black; */
-}
+  /* box-shadow: 10px 5px 5px black; 
+}*/
+
+/* FORMULAIRE CONNEXION & INSCRIPTION */
+.form_log { 
+  background-color: #DE8E4F;
+  border-radius: 50px;   
+  align-self: center; 
+  text-align: center;
+  width: 35%;  
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 40px;
+  }
 
 legend {
   font-size: 50px;
@@ -216,7 +231,7 @@ legend {
   }
 }
 
-/* ACCEUIL  */
+/* ACCUEIL  */
 
 .partie-droite {
   background-color: #F9F5E4;
@@ -232,7 +247,7 @@ legend {
 .partie-droite a{
   justify-content: center;
   text-decoration: none;
-   display: flex; 
+   display: flex;
   font-size: 30px;
   border-radius: 50px;
   background-color: #DE8E4F;
@@ -388,4 +403,19 @@ legend {
 
 .icone-vertical-menu {
   width: 60%;
+}
+/* SEARCH BAR RECHERCHE */
+
+.searchbar {
+background-color: pink;
+width: 20%;
+height: 10%;
+display:flex;
+border-radius: 50px; 
+  align-self: end;
+  padding-left: 1%  ;
+  text-align: center;
+  align-items: center;
+  position: fixed;
+  top: 20px;
 }

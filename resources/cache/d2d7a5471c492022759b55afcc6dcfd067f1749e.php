@@ -4,10 +4,8 @@
 
 <div class="formulaire">
 
-  <img src="css/img/feuille.png" class="logo"> 
-
-<form action='index.php?action=loginT' method='POST'>
-  
+<form class="form_log" action='index.php?action=loginT' method='POST'>
+<img src="css/img/feuille.png" class="logo"> 
 
   <legend>Connexion</legend>
 
@@ -18,7 +16,7 @@
   <input type="checkbox" id="rememberme" name="rememberme" value="rememberme" class="rememberme"> -->
   
   
-  <input type='submit' name='connecter' value='Login in'id='submit'>
+  <input type='submit' name='connecter' value='Connexion'id='submit'>
 
 </form>
 </div>
