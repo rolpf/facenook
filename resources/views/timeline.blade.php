@@ -16,8 +16,7 @@
             <input type="submit" name="buttonNewPost" value="Poster">
             </form>
             </div>
-            <div class="newPost">
-                
+
             <?php
         include("config/bd.php");
         include("config/actions.php");
@@ -30,20 +29,20 @@
         // id, contenu, dateEcrit, image, idAuteur, idAmi
         // comment afficher le pseudo ?
         $query = $pdo->prepare($sql);
-        $displayMessage = $query->execute(array($idUser));
+        $query->execute(array($idUser));
+        $displayMessage = $query->fetchAll();
+        
 
         foreach($displayMessage as $row) {
             echo '<div class="display_message">
-                    <div class="auteur">'.$row['id'].'
+                    <div class="infos_message">'.$row['id'].'<p class="date_message">'.$row['dateEcrit'].'</p></div>
+                    <p>'.$row['contenu'].'</p>
             </div>
             ';
         }
 
     ?>
-                <img class="avatar_message" src=""> 
-                <p class="pseudo">un pseudo</p><p class="date">la date</p>
-                <p class="message">un message posté par l'utilisateur.</p>
-            </div>
+
         </div>
 
         <div class="menu-droite">
