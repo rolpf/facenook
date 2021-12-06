@@ -23,10 +23,8 @@
 @endisset
 @isset($_SESSION['id'])
 <nav class="vertical-menu">
-    <a href="index.php"><img src="css/img/icon_home.png" alt="Accueil" class="icone-vertical-menu"></a>
+    <a href="index.php?action=timeline"><img src="css/img/icon_home.png" alt="Accueil" class="icone-vertical-menu"></a>
 
-
-    <a href="index.php?action=timeline">Accueil</a>
 
         <a href='index.php?action=profil'>Profil</a>
 
