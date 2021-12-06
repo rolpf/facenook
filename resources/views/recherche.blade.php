@@ -7,8 +7,10 @@
 
         <div class="recherche">
             <h1 class="searchTitle">Voici le résultat de votre recherche</h1>
-                    <ul>
-                    </ul>
+            <?php
+                
+
+            ?>
 
         </div>
 
