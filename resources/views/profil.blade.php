@@ -10,10 +10,14 @@
         <div class="profil">
         <h1 class="title-page">Profil</h1>
             <div bio>
-                <img class="pdp" src="">
-                    <ul>
-                        
-                    </ul>
+            <!-- @isset($_SESSION['id'])
+        Bonjour  {{$_SESSION['login']}}
+    @endisset -->
+
+    
+                    <!-- <h1> 
+                        / */ 
+                </h1> -->
             </div>
 
         </div>

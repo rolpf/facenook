@@ -8,10 +8,15 @@
         <div class="profil">
         <h1 class="title-page">Profil</h1>
             <div bio>
-                <img class="pdp" src="">
-                    <ul>
-                        
-                    </ul>
+            <!-- <?php if(isset($_SESSION['id'])): ?>
+        Bonjour  <?php echo e($_SESSION['login']); ?>
+
+    <?php endif; ?> -->
+
+    
+                    <!-- <h1> 
+                        / */ 
+                </h1> -->
             </div>
 
         </div>
