@@ -13,7 +13,7 @@
                         
                     </ul>
             </div>
-
+            <button type="submit" action="#">Ajouter en ami</button>
         </div>
 
         <div class="menu-droite">

@@ -14,7 +14,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-top: 25px;
+    /*padding-top: 25px;
     /* background-color :#F9F5E4; */
     background-size: cover;
     font-family: 'Montserrat';
@@ -63,7 +63,7 @@ nav {
 /* FORMULAIRE CONNEXION & INSCRIPTION */
 .form_log { 
   background-color: #DE8E4F;
-  border-radius: 50px;   
+  border-radius: 50px;  
   align-self: center; 
   text-align: center;
   width: 35%;  
@@ -71,7 +71,7 @@ nav {
   align-items: center;
   position: relative;
   display: flex;
-  flex-direction: column;
+  flex-direction: column; /* tous les éléments se mettent en colomnne */
   padding-bottom: 40px;
   }
 
