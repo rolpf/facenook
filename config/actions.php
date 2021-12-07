@@ -10,6 +10,7 @@ $listeDesActions = array(
     "signin" => "actions/signin.php", // inscription
     "creationT" => "actions/creationT.php",
     "profil" => "actions/profil.php",
-    "profilT" => "actions/profilT.php"
+    "recherche" => "actions/recherche.php",
+    "rechercheT" => "actions/rechercheT.php",
 
 );

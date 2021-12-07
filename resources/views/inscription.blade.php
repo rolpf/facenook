@@ -2,8 +2,9 @@
 
 @section('content')
 <div class="inscription"> 
-  <img class="logo-inscription" src="css/img/feuille.png">  
-    <form action="index.php?action=creationT" method="post" enctype="multipart/form-data">
+ 
+    <form class="form_log" action="index.php?action=creationT" method="post" enctype="multipart/form-data">
+    <img class="logo" src="css/img/feuille.png">  
       <legend>Inscription</legend>
         <input type='text' name='user' placeholder='Identifiant' id="login">
         <input type="text" id="input_prenom" name="prenom" placeholder="Prénom" required >
