@@ -419,3 +419,21 @@ border-radius: 50px;
   position: fixed;
   top: 20px;
 }
+
+
+/* BOUTON AJOUT AMI */
+
+.resultatRecherche a {
+  padding: 10px 10px;
+  text-decoration: none;
+  color: black;
+  font-size: 170%;
+}
+
+.resultatRecherche a:hover {
+  color: #867B67;
+}
+
+.btn-ajoutAmi {
+    background-color: #57BCA8;
+}
