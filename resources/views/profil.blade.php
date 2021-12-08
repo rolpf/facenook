@@ -15,7 +15,7 @@
                         
                     </ul>
             </div>
-            <button type="submit" action="index.php?action=demandeami">Ajouter en ami</button>
+            <button type="submit" action="index.php?action=demandeami=id='<?php $affichageProfil['id']?>'" >Ajouter en ami</button>
         </div>
 
         <div class="menu-droite">
