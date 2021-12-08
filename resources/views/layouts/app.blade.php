@@ -39,7 +39,7 @@
     @endisset
 </nav>
 
-@isset($_SESSION['id'])
+<!-- @isset($_SESSION['id'])
     <div class="searchbar">
     <form action="index.php" method="GET"> 
     <input type='hidden' name='action' value='recherche'>
@@ -47,7 +47,7 @@
       <button type="submit"><i class="fa fa-search"></i></button>
     </form>
   </div>   
-    @endisset
+    @endisset -->
 
 <main class="container">
     @yield("content")

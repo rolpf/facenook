@@ -40,7 +40,7 @@
     <?php endif; ?>
 </nav>
 
-<?php if(isset($_SESSION['id'])): ?>
+<!-- <?php if(isset($_SESSION['id'])): ?>
     <div class="searchbar">
     <form action="index.php" method="GET"> 
     <input type='hidden' name='action' value='recherche'>
@@ -48,7 +48,7 @@
       <button type="submit"><i class="fa fa-search"></i></button>
     </form>
   </div>   
-    <?php endif; ?>
+    <?php endif; ?> -->
 
 <main class="container">
     <?php echo $__env->yieldContent("content"); ?>

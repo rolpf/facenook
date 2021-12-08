@@ -290,7 +290,7 @@ legend {
   color: #57BCA8;
  }
 
- .profil {
+ /* .profil {
   width: 60%;
   height: 100vh;
   background-color: white;
@@ -299,14 +299,14 @@ legend {
   border-color: #57BCA8
 
   
- }
+ } */
 
- .menu-droite {
+ /* .menu-droite {
   background-color: #F9F5E4 ;
   width: 20%;   /*largeur*/  
-  height: 100vh; /*hauteur*/ 
-  float: right;
- }
+  /* height: 100vh; /*hauteur*/ 
+  /* float: right;
+ } */ 
 
 
  /* page 404 */ 
@@ -378,7 +378,7 @@ legend {
 
 
 
-/* MENU VERTICAL */
+/* MENU VERTICAL ROXANE  */
 
 .vertical-menu {
   width: 20%; /* taille du menu */
@@ -406,7 +406,7 @@ legend {
 }
 /* SEARCH BAR RECHERCHE */
 
-.searchbar {
+/* .searchbar {
 background-color: pink;
 width: 20%;
 height: 10%;
@@ -418,4 +418,94 @@ border-radius: 50px;
   align-items: center;
   position: fixed;
   top: 20px;
+} */
+
+
+
+
+
+
+/* Océne code profil  */
+
+/* la barre de naviagtion  */
+
+.nav-bar {
+  background-color: #56BCA7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* #searchbox, button {
+  text-align: center;
+  border-radius: 50px;
+  border: none;
+  height: 40px;
+  width: 300px;
+  background-color: white; 
+  border: none; 
+  cursor: pointer;
+  margin-bottom: 20px;
+  margin-top: 20px;
+} */
+
+.searchbar-btn {
+  border-radius: 50%;
+  background-color: aqua;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.right-contener {
+  background-color: wheat;
+  float: right;
+  height: 700px;
+  width: 800px;
+}
+
+/* div avec les pseudos  */
+
+.pseudo-part {  
+  padding-top: 10px;
+  margin: 20px;
+  font-family: 'Montserrat';
+  line-height: 30px;
+  /* background-color: aqua; */
+}
+
+.utilisateur-name {
+  /* font-family: 'Montserrat'; */
+  font-size: 20px;
+  /* padding-top: 10px;
+  margin: 20px; */
+  text-transform: uppercase;
+}
+
+.btn-post {
+  float: right;
+}
+
+.btn-button {
+  background-color: #DE8E4F;
+  font-size: 20px;
+  text-decoration: none;
+  border-radius: 50px;
+  color: black;
+  width: 280px;
+  height: 80px;
+  justify-content: center;
+  padding-top: 20px; 
+  margin-top: 20px;
+  display: flex;
+  text-align: center;
+  float: left;
 }
