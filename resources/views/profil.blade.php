@@ -15,7 +15,22 @@
                         
                     </ul>
             </div>
-            <button type="submit" action="index.php?action=demandeami=id='<?php $affichageProfil['id']?>'" >Ajouter en ami</button>
+            <?php
+                    include("config/bd.php");
+                    include("config/actions.php");
+                
+                if (isset($_GET['id']) && $_GET['id']>0) {
+                    $sql = 'select id, login, avatar from user where id=?';
+                    $query = $pdo->prepare($sql);
+                    $query->execute(array($_GET['id']));
+                    $affichageProfil = $query->fetch(); // un array php
+                    // id, login, avatar
+
+                    echo "coucou ". $affichageProfil['login'];
+                    echo "<button type='submit' action='index.php?action=demandeami&id='".$affichageProfil['id']."'>Ajouter en ami</button>";
+                }
+                ?>
+            
         </div>
 
         <div class="menu-droite">
