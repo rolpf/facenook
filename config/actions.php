@@ -12,5 +12,7 @@ $listeDesActions = array(
     "profil" => "actions/profil.php",
     "recherche" => "actions/recherche.php",
     "rechercheT" => "actions/rechercheT.php",
+    "demandeami" => "actions/demandeami.php",
+    "ajoutami" => "actions/ajoutami.php",
 
 );
