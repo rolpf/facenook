@@ -7,7 +7,12 @@
     <title><?php echo e($title); ?></title>
     <link href="css/style.css" rel="stylesheet">
     <link href="css/typo.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+
+
+
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
 </head>
 
 <body>
@@ -24,31 +29,108 @@
     </div>
 <?php endif; ?>
 <?php if(isset($_SESSION['id'])): ?>
-<nav class="vertical-menu">
-    <a href="index.php"><img src="css/img/icon_home.png" alt="Accueil" class="icone-vertical-menu"></a>
+<!-- <nav class="vertical-menu"> -->
+
+
+     <!-- <a href="index.php"><img src="css/img/icon_home.png" alt="Accueil" class="icone-vertical-menu"></a> -->
 
 
 
-        <a href='index.php?action=profil&id=<?php echo$_SESSION['id']?>'>Profil</a>
+         <!-- <a href='index.php?action=profil&id=
+         <?php echo$_SESSION['id'] ?>
+         '>Profil</a>  -->
 
-        <a href="index.php?action=page2"><img src="css/img/icon_people.png" alt="AjoutAmi" class="icone-vertical-menu"></a>
+        <!-- <a href="index.php?action=page2"><img src="css/img/icon_people.png" alt="AjoutAmi" class="icone-vertical-menu"></a> --> -->
     <?php endif; ?>
 
 
     <?php if(isset($_SESSION['id'])): ?>
-        Bonjour  <?php echo e($_SESSION['login']); ?> <a href='index.php?action=deconnexion'><img src="css/img/icon_deconnexion.png" alt="Accueil" class="icone-vertical-menu"></a></li>
+        <!-- Bonjour  <?php echo e($_SESSION['login']); ?> <a href='index.php?action=deconnexion'><img src="css/img/icon_deconnexion.png" alt="Accueil" class="icone-vertical-menu"></a></li> -->
     <?php endif; ?>
 </nav>
 
-<!-- <?php if(isset($_SESSION['id'])): ?>
-    <div class="searchbar">
+<?php if(isset($_SESSION['id'])): ?>
+
+<div class="menu-gauche">
+    <div class="logo-content">
+        <div class="logo-menu">
+            <div class="logo_name">Facenook</div>
+        </div>
+            <ul class="nav_list">
+                <li>
+                        <i class='bx bx-search-alt' ></i>
+                            <form action="index.php" method="GET"> 
+                                <input type='hidden' name='action' value='recherche'>
+                                <!-- <input name="recherche" type="text" placeholder="Chercher un utilisateur"> -->
+                                <button type="submit" class="submit-profil"></button>
+                            </form>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="index.php">
+                        <i class='bx bxs-home'></i>
+                        <span class="links_name">Acceuil</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="index.php?action=page2">
+                        <i class='bx bx-group' ></i>
+                        <span class="links_name">Amis</span>
+
+                    </a>
+                </li>
+
+                <li>
+                <a href='index.php?action=profil&id=<?php echo$_SESSION['id']?>'>
+                     <i class='bx bx-show'></i>
+                    <span class="links_name">Profil</span>
+
+                </a> 
+                       
+                        
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <i class='bx bxs-comment-dots'></i>
+                        <span class="links_name">Feed</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="index.php?action=deconnexion">
+                        <i class='bx bxs-door-open'></i>
+                        <span class="links_name">Déconnexion</span>
+                    </a>
+                </li>
+
+            </ul>
+
+    </div>
+</div> 
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- <div class="searchbar">
     <form action="index.php" method="GET"> 
     <input type='hidden' name='action' value='recherche'>
       <input name="recherche" type="text" placeholder="Chercher un utilisateur">
       <button type="submit"><i class="fa fa-search"></i></button>
     </form>
-  </div>   
-    <?php endif; ?> -->
+  </div>    -->
+    <?php endif; ?>
 
 <main class="container">
     <?php echo $__env->yieldContent("content"); ?>
