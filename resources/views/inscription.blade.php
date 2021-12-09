@@ -12,5 +12,6 @@
         <input type="email" class="btn" name="email" placeholder="Email" required>
         <input type="password" class="btn"  name="mdp" placeholder="Mot de passe" required>
         <input type="submit" class="btn-submit" name="valider" value="Inscription">
+
 </form>
 @endsection

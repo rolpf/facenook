@@ -37,7 +37,7 @@
 
 
          <!-- <a href='index.php?action=profil&id=
-         <?php echo$_SESSION['id'] ?>
+          <?php //echo$_SESSION['id'] ?>
          '>Profil</a>  -->
 
         <!-- <a href="index.php?action=page2"><img src="css/img/icon_people.png" alt="AjoutAmi" class="icone-vertical-menu"></a> --> -->
@@ -58,11 +58,17 @@
         </div>
             <ul class="nav_list">
                 <li>
-                        <i class='bx bx-search-alt' ></i>
+                        
                             <form action="index.php" method="GET"> 
+                                <button type="submit" class="submit-recherche"><i class='bx bx-search-alt' ></i></button>
                                 <input type='hidden' name='action' value='recherche'>
+<<<<<<< HEAD
                                 <!-- <input name="recherche" type="text" placeholder="Chercher un utilisateur"> -->
                                 <button type="submit" class="submit-recherche"></button>
+=======
+                                <input name="recherche" type="text" placeholder="Chercher un utilisateur">
+                                
+>>>>>>> 1a01271fc3e863e4c9e6525482615e526555712c
                             </form>
                     </a>
                 </li>
@@ -70,7 +76,7 @@
                 <li>
                     <a href="index.php">
                         <i class='bx bxs-home'></i>
-                        <span class="links_name">Acceuil</span>
+                        <span class="links_name">Accueil</span>
                     </a>
                 </li>
 

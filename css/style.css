@@ -14,7 +14,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-top: 25px;
+    /*padding-top: 25px;*/
     /* background-color :#F9F5E4; */
     background-size: cover;
     font-family: 'Montserrat';
@@ -118,7 +118,7 @@ legend {
  justify-content: center;
 }
 
-.btn-submit{
+.btn-submit, button {
   border-radius: 50px;
   border: none;
   height: 40px;
@@ -142,7 +142,7 @@ legend {
     justify-content: center;
     background-color: #DE8E4F;
     border-radius: 50px;
-} */
+} 
 /*repsonsive*/ 
 
 @media only screen and (max-width: 450px) {
@@ -403,14 +403,17 @@ legend {
 
 
 
+
+
 /* PROFIL OCEANE  */
 
-.profil {
-   /* background-color: aqua; */
-   /* width: 100%;
+/* .profil {
+    background-color: aqua; 
+   width: 100%;
    height: 1300px;
    overflow: hidden;
-   float: right;  */
-}
+   float: right;
+} */
+
 
 
