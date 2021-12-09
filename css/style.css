@@ -83,10 +83,14 @@ legend {
   display: flex;
 }
 
-/* boutton formulaire */ 
+/* boutton formulaire  */ 
 
+.formulaire {
+  display: flex;
+  justify-content: center;
+ }
 
-#login, button {
+.btn {
   text-align: center;
   border-radius: 50px;
   border: none;
@@ -97,35 +101,6 @@ legend {
   cursor: pointer;
   margin-bottom: 20px;
   margin-top: 20px;
-
-}
-
-#password, button {
-  text-align: center;
-  border-radius: 50px;
-  border: none;
-  height: 40px;
-  width: 300px;
-  background-color: white;  
-  border: none; 
-  cursor: pointer;
-  /* float: left;
-} */
-}
-
-#submit, button {
-  border-radius: 50px;
-  border: none;
-  height: 40px;
-  width: 100px;
-  background-color: white;  
-  cursor: pointer;
-  margin-bottom: 20px;
-  margin-top: 20px;
-}
-
-#submit:hover {
-  color: #DE8E4F;
 }
 
 .rememberme {
@@ -134,10 +109,7 @@ legend {
 }
 
 
-.formulaire {
- display: flex;
- justify-content: center;
-}
+
 
 /* inscription formualaire */ 
 
@@ -146,59 +118,7 @@ legend {
  justify-content: center;
 }
 
-#input_prenom, button {
-  text-align: center;
-  border-radius: 50px;
-  border: none;
-  height: 40px;
-  width: 300px;
-  background-color: white; 
-  border: none; 
-  cursor: pointer;
-  margin-bottom: 20px;
-  margin-top: 20px;
-}
-
-#input_nom, button {
-  text-align: center;
-  border-radius: 50px;
-  border: none;
-  height: 40px;
-  width: 300px;
-  background-color: white; 
-  border: none; 
-  cursor: pointer;
-  margin-bottom: 20px;
-  margin-top: 20px;
-}
-
-#input_email, button {
-  text-align: center;
-  border-radius: 50px;
-  border: none;
-  height: 40px;
-  width: 300px;
-  background-color: white; 
-  border: none; 
-  cursor: pointer;
-  margin-bottom: 20px;
-  margin-top: 20px;
-}
-
-#input_password, button {
-  text-align: center;
-  border-radius: 50px;
-  border: none;
-  height: 40px;
-  width: 300px;
-  background-color: white; 
-  border: none; 
-  cursor: pointer;
-  margin-bottom: 20px;
-  margin-top: 20px;
-}
-
-#input_submit, button {
+.btn-submit{
   border-radius: 50px;
   border: none;
   height: 40px;
@@ -209,7 +129,7 @@ legend {
   margin-top: 20px;
 }
 
-#input_submit:hover {
+.btn-submit:hover {
   color: #DE8E4F;
 }
 
@@ -222,7 +142,7 @@ legend {
     justify-content: center;
     background-color: #DE8E4F;
     border-radius: 50px;
-}
+} */
 /*repsonsive*/ 
 
 @media only screen and (max-width: 450px) {
@@ -279,34 +199,6 @@ legend {
   font-size: 60px;
 }
 
- /* PROFIL CSS  */
-
- /* .menu-gauche {
-   background-color: #F9F5E4 ;
-   width: 20%;   /*largeur*/  
-   /* height: 100vh; /*hauteur*/ 
-  /* float: left; */ 
-  /* border-right: 5px solid;
-  color: #57BCA8; */
- 
-
- /* .profil {
-  width: 60%;
-  height: 100vh;
-  background-color: white;
-  float: left;
-  border-right: 5px solid;
-  border-color: #57BCA8
-
-  
- } */
-
- /* .menu-droite {
-  background-color: #F9F5E4 ;
-  width: 20%;   /*largeur*/  
-  /* height: 100vh; /*hauteur*/ 
-  /* float: right;
- } */ 
 
 
  /* page 404 */ 
@@ -371,43 +263,7 @@ legend {
 
 
 
-
-
-
-
-
-
-
-/* MENU VERTICAL ROXANE  */
-
-/* .vertical-menu {
-  width: 20%; /* taille du menu */
-  /* position: fixed;
-} */
-
-
-/* SEARCH BAR RECHERCHE */
-
-/* .searchbar {
-background-color: pink;
-width: 20%;
-height: 10%;
-display:flex;
-border-radius: 50px; 
-  align-self: end;
-  padding-left: 1%  ;
-  text-align: center;
-  align-items: center;
-  position: fixed;
-  top: 20px;
-} */
-
-
-
-
-
-
-/* Océne code profil  */
+/* Océane code profil  */
 
 /* la barre de naviagtion  */
 
@@ -417,21 +273,6 @@ border-radius: 50px;
   align-items: center;
   justify-content: center;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 .right-contener {
   background-color: wheat;

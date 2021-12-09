@@ -61,7 +61,7 @@
                             <form action="index.php" method="GET"> 
                                 <input type='hidden' name='action' value='recherche'>
                                 <!-- <input name="recherche" type="text" placeholder="Chercher un utilisateur"> -->
-                                <button type="submit" class="submit-profil"></button>
+                                <button type="submit" class="submit-recherche"></button>
                             </form>
                     </a>
                 </li>
