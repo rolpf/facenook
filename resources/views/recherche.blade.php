@@ -22,7 +22,7 @@
 
                     foreach($searchResult as $row) {
                         echo "<div class='resultatRecherche'>
-                    <a href='index.php?action=profil&id=". $row['id']."' method='POST'>". $row['login'] ."</a></div>";
+                    <a href='index.php?action=profil&id=". $row['id']."'method='GET'>". $row['login'] ."</a></div>"; // met l'id dans l'url
                     }
 
                 ?>
