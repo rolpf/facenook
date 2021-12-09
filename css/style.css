@@ -14,7 +14,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-top: 25px;
+    /*padding-top: 25px;*/
     /* background-color :#F9F5E4; */
     background-size: cover;
     font-family: 'Montserrat';
@@ -198,7 +198,7 @@ legend {
   margin-top: 20px;
 }
 
-#input_submit, button {
+.input_submit, button {
   border-radius: 50px;
   border: none;
   height: 40px;
@@ -209,7 +209,7 @@ legend {
   margin-top: 20px;
 }
 
-#input_submit:hover {
+.input_submit:hover {
   color: #DE8E4F;
 }
 
@@ -560,6 +560,10 @@ border-radius: 50px;
    font-size: 35px;
 } */
 
+.submit-recherche {
+  
+}
+
 
 
 /* PROFIL OCEANE  */
@@ -571,5 +575,6 @@ border-radius: 50px;
    overflow: hidden;
    float: right;  */
 }
+
 
 

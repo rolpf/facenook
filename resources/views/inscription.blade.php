@@ -11,6 +11,6 @@
         <input type="text" id="input_nom" name="nom" placeholder="Nom" required>
         <input type="email" id='input_email'name="email" placeholder="Email" required>
         <input type="password" id="input_password" name="mdp" placeholder="Mot de passe" required>
-        <input type="submit" id="input_submit"name="valider" value="Inscription">
+        <input type="submit" class="input_submit" name="valider" value="Inscription">
 </form>
 @endsection
