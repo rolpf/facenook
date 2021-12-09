@@ -103,6 +103,17 @@ legend {
   margin-top: 20px;
 }
 
+.btn-submit {
+  border-radius: 50px;
+  border: none;
+  height: 40px;
+  width: 100px;
+  background-color: white;  
+  cursor: pointer;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
 .rememberme {
   display: flex ;
   margin-top: 20px;
@@ -116,21 +127,6 @@ legend {
 .inscription {
   display: flex;
  justify-content: center;
-}
-
-.btn-submit, button {
-  border-radius: 50px;
-  border: none;
-  height: 40px;
-  width: 100px;
-  background-color: white;  
-  cursor: pointer;
-  margin-bottom: 20px;
-  margin-top: 20px;
-}
-
-.btn-submit:hover {
-  color: #DE8E4F;
 }
 
 .logo-inscription {
@@ -377,7 +373,7 @@ legend {
   background-color: azure;
 }
 
-/* .menu-gauche ul li input {
+.menu-gauche ul li input {
    color: black;
    position: absolute;
    height: 100%;
@@ -391,15 +387,14 @@ legend {
    padding-left: 50px;
    font-size: 18px;
    color: aqua;
-}
+} 
 
 .menu-gauche ul li .bx-search-alt {
    position: absolute;
    top: 5%;
    z-index: 99;
-   color: aquamarine;
    font-size: 35px;
-} */
+} 
 
 
 

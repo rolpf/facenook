@@ -58,15 +58,13 @@
             <ul class="nav_list">
                 <li>
                         
-                            <form action="index.php" method="GET"> 
-                                <button type="submit" class="submit-recherche"><i class='bx bx-search-alt' ></i></button>
-                                <input type='hidden' name='action' value='recherche'>
-                                <!-- <input name="recherche" type="text" placeholder="Chercher un utilisateur"> -->
-                                <button type="submit" class="submit-recherche"></button>
-                                <input name="recherche" type="text" placeholder="Chercher un utilisateur">
-                                
-                            </form>
-                    </a>
+                <div class="searchbar">
+                    <form action="index.php" method="GET"> 
+                        <input type='hidden' name='action' value='recherche'>
+                        <input name="recherche" type="text" placeholder="Chercher un utilisateur">
+                        <button type="submit"> <i class='bx bx-search-alt' ></i></button>
+                    </form>
+                </div>  
                 </li>
 
                 <li>
