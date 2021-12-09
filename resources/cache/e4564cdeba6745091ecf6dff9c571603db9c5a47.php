@@ -5,7 +5,7 @@ section class="profil">
             
                 <div>
                     <div class="profil-gauche">
-                    <div class="logo">
+                    <div class="logo-profil">
                         <img src="/style/pp.png">
                     </div>
 
