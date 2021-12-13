@@ -23,10 +23,11 @@
                     $query->execute(array($_GET['id']));
                     $affichageProfil = $query->fetch(); // un array php
                     // id, login, avatar
-
+                    //if ($_POST['id'] != $_GET['id']& ) {
                     echo "coucou ". $affichageProfil['login'];
                     echo "<a href='index.php?action=demandeami&id=".$affichageProfil['id']."'method='GET'>Ajouter en ami</a>"; // met l'id dans l'url
-                }
+                //}
+            }
                 ?>
             
         </div>
