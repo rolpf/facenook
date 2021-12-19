@@ -7,6 +7,6 @@
 # Editor-based HTTP Client requests
 /httpRequests/
 #cache
-/cache
+/cache/
 # Images
 /css/img

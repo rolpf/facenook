@@ -25,4 +25,4 @@ if(empty($linkVerif)) {
     $query->execute(array($idUser, $idAmi)); // si on met des ? on met les variables dans les () du execute
     echo "Demande d'ami envoyée !";
  } else { echo "Vous ne pouvez pas demander cet utilisateur en ami";}
-}
+}   

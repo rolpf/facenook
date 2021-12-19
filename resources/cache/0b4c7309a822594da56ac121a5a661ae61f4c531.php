@@ -14,10 +14,11 @@
                 $idAmi = $_GET['id'];
 
 
-                $sql='SELECT user.* FROM user WHERE id IN(SELECT idUtilisateur1 FROM lien WHERE idUtilisateur2=? AND etat="attente")';
+                $sql='SELECT * FROM user WHERE id IN(SELECT idUtilisateur1 FROM lien WHERE idUtilisateur2=? AND etat="attente")';
                 $query = $pdo->prepare($sql);
                 $query->execute(array($idUser));
                 $demandeAmi->fetchAll(); // table utilisateur
+                var_dump($demandeAmi);
 
                // echo $demandeAmi['login'];
                 

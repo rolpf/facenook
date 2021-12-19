@@ -24,9 +24,24 @@
                     $affichageProfil = $query->fetch(); // un array php
                     // id, login, avatar
                     //if ($_POST['id'] != $_GET['id']& ) {
-                    echo "coucou ". $affichageProfil['login'];
+                    echo "Page de ". $affichageProfil['login']."<br>";
+
+                    $sqlverifLien = 'select * from lien where (idUtilisateur1=? AND idUtilisateur2=?) OR (idUtilisateur1=? AND idUtilisateur2=?)';
+                    $query2 = $pdo->prepare($sqlverifLien);
+                    // on selectionne le lien entre l'utilisateur connecté et l'utilisateur du profil
+                    $query2->execute(array($affichageProfil['id'],$_SESSION['id'] , $_SESSION['id'] ,$affichageProfil['id']));
+                    $verifLien = $query2->fetch(); // array php
+
+                    if ($verifLien['etat'] == 'attente'){
+                        echo "<br> Demande en attente";
+                    } else {
+                    //if(isset()) // verifier que les deux personnes ne soient pas déjà amies, ou alors que la demande n'est pas en attente 
                     echo "<a href='index.php?action=demandeami&id=".$affichageProfil['id']."'method='GET'>Ajouter en ami</a>"; // met l'id dans l'url
                 //}
+                    }
+                    
+
+
             }
                 ?>
             
