@@ -51,6 +51,23 @@
 
 <?php if(isset($_SESSION['id'])): ?>
 
+
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <div class="menu-gauche">
     <div class="logo-content">
         <div class="logo-menu">
@@ -71,7 +88,7 @@
                 <li>
                     <a href="index.php">
                         <i class='bx bxs-home'></i>
-                        <span class="links_name">Accueil</span>
+                        <span class="links_name">Acceuil</span>
                     </a>
                 </li>
 
@@ -124,13 +141,13 @@
 
 
 
-    <!-- <div class="searchbar">
+    <div class="searchbar">
     <form action="index.php" method="GET"> 
     <input type='hidden' name='action' value='recherche'>
       <input name="recherche" type="text" placeholder="Chercher un utilisateur">
       <button type="submit"><i class="fa fa-search"></i></button>
     </form>
-  </div>    -->
+  </div>   
     <?php endif; ?>
 
 <main class="container">
