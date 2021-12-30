@@ -34,13 +34,16 @@
                     $query2->execute(array($affichageProfil['id'],$_SESSION['id'] , $_SESSION['id'] ,$affichageProfil['id']));
                     $verifLien = $query2->fetch(); // array php
 
-                    if ($verifLien['etat'] == 'attente'){
+                    if ($verifLien['etat'] == 'attente'){ // probleme si le tableau est vide, trying to access array offset on value of type bool
                         echo "<br> Demande en attente";
-                    } else {
+                    } else if($verifLien['etat'] == 'amis'){
+                        echo "Display profile info";
+                    } else{
                     //if(isset()) // verifier que les deux personnes ne soient pas déjà amies, ou alors que la demande n'est pas en attente 
                     echo "<a href='index.php?action=demandeami&id=".$affichageProfil['id']."'method='GET'>Ajouter en ami</a>"; // met l'id dans l'url
                 //}
                     }
+
                     
 
 

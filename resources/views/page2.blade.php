@@ -10,21 +10,24 @@
         <div class="profil">
         <h1 class="title-page">Demandes d'amis</h1>
         <?php
-            if (isset($_GET['id']) && !empty($_GET['id']) && !empty($_SESSION['id'])){
-
+            include("config/bd.php");
+            include("config/actions.php");
+            if (isset($_SESSION['id']) && !empty($_SESSION['id'])){
                 $idUser = $_SESSION['id'];//id Utilisateur 1, l'id de l'utilisateur connecté
-                $idAmi = $_GET['id'];
 
 
-                $sql='SELECT * FROM user WHERE id IN(SELECT idUtilisateur1 FROM lien WHERE idUtilisateur2=? AND etat="attente")';
+                //$sql='SELECT * FROM user WHERE id IN(SELECT idUtilisateur1 FROM lien WHERE idUtilisateur1=2 AND etat="attente")';
+                $sql='SELECT user.* FROM user WHERE id IN(SELECT idUtilisateur1 FROM lien WHERE idUtilisateur2=? AND etat="attente")'; //OR (SELECT idUtilisateur2 FROM lien WHERE idUtilisateur1=? AND etat="attente")
                 $query = $pdo->prepare($sql);
                 $query->execute(array($idUser));
-                $demandeAmi->fetchAll(); // table utilisateur
-                var_dump($demandeAmi);
+                $demandeAmi = $query->fetchAll(); // table utilisateur
 
-               // echo $demandeAmi['login'];
-                
-                
+                foreach($demandeAmi as $parcoursDemande) {
+                    echo $parcoursDemande['login'] .'<button>Accepter</button><button>Refuser</button><br>';
+
+                }
+
+                }
                 ?>
 
         </div>
@@ -32,7 +35,6 @@
         
         <div class="menu-droite">
             
-
         </div>
 
 
