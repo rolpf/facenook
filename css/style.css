@@ -11,15 +11,18 @@ html {
 }
 
 body {
-    margin: 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 100vh;
+    /*padding-top: 25px;*/
     /* background-color :#F9F5E4; */
     background-size: cover;
     font-family: 'Montserrat';
     
+}
+
+nav {
+  height: 10%;
 }
 
 
@@ -29,19 +32,19 @@ body {
 
 
 .logo {
-  position: absolute;
-    top: 24%;
-    left: 48%;
+    margin: 0 auto;
+    top: -35px;
     height: 70px;
     z-index: 1;
     justify-content: center;
     background-color: #DE8E4F;
     border-radius: 50px;
+    position: relative;
 }
 
 
 
-form {
+/*form {
   background-color: #DE8E4F;
   border-radius: 50px;   
   align-self: center; 
@@ -52,13 +55,25 @@ form {
   align-items: center;
   position: relative;
   display: flex;
-  flex-direction: column;
-
-
-
+  flex-direction: column;*/
   /* border: 5px solid white; */
-  /* box-shadow: 10px 5px 5px black; */
-}
+  /* box-shadow: 10px 5px 5px black; 
+}*/
+
+/* FORMULAIRE CONNEXION & INSCRIPTION */
+.form_log { 
+  background-color: #DE8E4F;
+  border-radius: 50px;   
+  align-self: center; 
+  text-align: center;
+  width: 35%;  
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 40px;
+  }
 
 legend {
   font-size: 50px;
@@ -68,10 +83,14 @@ legend {
   display: flex;
 }
 
-/* boutton formulaire */ 
+/* boutton formulaire  */ 
 
+.formulaire {
+  display: flex;
+  justify-content: center;
+ }
 
-#login, button {
+.btn {
   text-align: center;
   border-radius: 50px;
   border: none;
@@ -82,23 +101,9 @@ legend {
   cursor: pointer;
   margin-bottom: 20px;
   margin-top: 20px;
-
 }
 
-#password, button {
-  text-align: center;
-  border-radius: 50px;
-  border: none;
-  height: 40px;
-  width: 300px;
-  background-color: white;  
-  border: none; 
-  cursor: pointer;
-  /* float: left;
-} */
-}
-
-#submit, button {
+.btn-submit {
   border-radius: 50px;
   border: none;
   height: 40px;
@@ -107,10 +112,6 @@ legend {
   cursor: pointer;
   margin-bottom: 20px;
   margin-top: 20px;
-}
-
-#submit:hover {
-  color: #DE8E4F;
 }
 
 .rememberme {
@@ -119,83 +120,13 @@ legend {
 }
 
 
-.formulaire {
- display: flex;
- justify-content: center;
-}
+
 
 /* inscription formualaire */ 
 
 .inscription {
   display: flex;
  justify-content: center;
-}
-
-#input_prenom, button {
-  text-align: center;
-  border-radius: 50px;
-  border: none;
-  height: 40px;
-  width: 300px;
-  background-color: white; 
-  border: none; 
-  cursor: pointer;
-  margin-bottom: 20px;
-  margin-top: 20px;
-}
-
-#input_nom, button {
-  text-align: center;
-  border-radius: 50px;
-  border: none;
-  height: 40px;
-  width: 300px;
-  background-color: white; 
-  border: none; 
-  cursor: pointer;
-  margin-bottom: 20px;
-  margin-top: 20px;
-}
-
-#input_email, button {
-  text-align: center;
-  border-radius: 50px;
-  border: none;
-  height: 40px;
-  width: 300px;
-  background-color: white; 
-  border: none; 
-  cursor: pointer;
-  margin-bottom: 20px;
-  margin-top: 20px;
-}
-
-#input_password, button {
-  text-align: center;
-  border-radius: 50px;
-  border: none;
-  height: 40px;
-  width: 300px;
-  background-color: white; 
-  border: none; 
-  cursor: pointer;
-  margin-bottom: 20px;
-  margin-top: 20px;
-}
-
-#input_submit, button {
-  border-radius: 50px;
-  border: none;
-  height: 40px;
-  width: 100px;
-  background-color: white;  
-  cursor: pointer;
-  margin-bottom: 20px;
-  margin-top: 20px;
-}
-
-#input_submit:hover {
-  color: #DE8E4F;
 }
 
 .logo-inscription {
@@ -207,7 +138,7 @@ legend {
     justify-content: center;
     background-color: #DE8E4F;
     border-radius: 50px;
-}
+} 
 /*repsonsive*/ 
 
 @media only screen and (max-width: 450px) {
@@ -216,7 +147,7 @@ legend {
   }
 }
 
-/* ACCEUIL  */
+/* ACCUEIL  */
 
 .partie-droite {
   background-color: #F9F5E4;
@@ -232,7 +163,7 @@ legend {
 .partie-droite a{
   justify-content: center;
   text-decoration: none;
-   display: flex; 
+   display: flex;
   font-size: 30px;
   border-radius: 50px;
   background-color: #DE8E4F;
@@ -264,34 +195,6 @@ legend {
   font-size: 60px;
 }
 
- /* PROFIL CSS  */
-
- .menu-gauche {
-   background-color: #F9F5E4 ;
-   width: 20%;   /*largeur*/  
-   height: 100vh; /*hauteur*/ 
-  float: left;
-  border-right: 5px solid;
-  color: #57BCA8;
- }
-
- .profil {
-  width: 60%;
-  height: 100vh;
-  background-color: white;
-  float: left;
-  border-right: 5px solid;
-  border-color: #57BCA8
-
-  
- }
-
- .menu-droite {
-  background-color: #F9F5E4 ;
-  width: 20%;   /*largeur*/  
-  height: 100vh; /*hauteur*/ 
-  float: right;
- }
 
 
  /* page 404 */ 
@@ -356,36 +259,324 @@ legend {
 
 
 
+/* Océane code profil  */
 
+/* la barre de naviagtion  */
 
-
-
-
-
-
-/* MENU VERTICAL */
-
-.vertical-menu {
-  width: 20%; /* taille du menu */
-  position: fixed;
+.nav-bar {
+  background-color: #56BCA7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.vertical-menu a {
-  background-color: #867B67; /* Grey background color */
-  color: white; /* Black text color */
-  display: block; /* Make the links appear below each other */
-  padding: 12px; /* Add some padding */
-  text-decoration: none; /* Remove underline from links */
+.right-contener {
+
+
+  height: 700px;
+  width: 800px;
+}
+
+
+/* div avec les pseudos  */
+
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #56BCA7;
+  color: aliceblue;
+  padding: 30px 10% ;
+}
+
+.logo-nav {
+  cursor: pointer;
+  font-size: 30px;
+}
+
+.navbar-links ul {
+  display: flex;
+  
+}
+
+.navbar-links li {
+ list-style: none;
+}
+
+.navbar-links li a {
+  transition:  all 0.3s ease 0s;
+  color:  white;
+  text-decoration: none;
+  text-transform: uppercase;
+  display: block;
+  padding: 1rem;
+  font-size: 30px;
+}
+
+.btn-nav button {
+  padding: .9rem 3rem;
+  background-color: red;
+  border: none;
   border-radius: 50px;
-  margin-top: 20px;
-  margin-right: 80%;
+  cursor: pointer;
+  transition:  all 0.3s ease 0s;
+  color: aliceblue;
+  display: f;
+}
+
+.navbar-links li a:hover {
+  color: aqua;
+}
+
+
+.toggle-btn {
+  position:absolute ;
+  top : .75rem;
+  right: 1rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+}
+
+.toggle-btn .bar {
+  height: 3px;
+  width: 100%;
+  background-color: white;
+  border-radius: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 900px) {
+  .toggle-btn {
+      display: flex;
+  }
+
+  .navbar-links {
+      width: 100%;
+  }
+
+  .navbar {
+      flex-direction: column;
+      align-items: flex-start;
+  } 
+
+  .navbar-links ul {
+      width: 100%;
+      flex-direction: column;
+  }
+
+  .navbar-links li {
+      text-align: center;
+  }
+
+  .navbar-links li a {
+      padding: .5rem 1rem;
+  }
+
+
+  .navbar-links .active {
+      display: flex;
+  }
+
+  .btn-nav button {
+      
+      flex-direction: column;
+      align-items: flex-start;
+  }
+
+}
+
+
+
+
+
+/* LE NOUVEAU CSS DU PROFIL */
+
+/* MENU PROFIL : Oceane  */
+
+/* .menu-gauche {
+  height: 100%;
+  top:  0;
+  left: 0;
+  width: 300px;
+  background-color: #FFF8E5;
+  position: fixed;
+  padding: 6px 14px;
+  border-right: 6px solid black;
+  
+}
+
+.menu-gauche .logo-content .logo {
+  color: blueviolet;
+  display: flex;
+  height: 50px;
+  width: 100%;
+  align-items: center;
+  padding-top: 50px;
+}
+
+.logo-content .logo-menu .logo_name {
+  font-size: 40px;
+  font-weight: 400;
   text-align: center;
+  padding-top: 30px;
+  font-family: 'Montserrat';
 }
 
-.vertical-menu a:hover {
-  background-color: #ccc; /* Dark grey background on mouse-over */
+.menu-gauche #btn {
+  position: absolute;
+  color: aqua;
+  left: 90%;
+  top: 6px;
+  font-size: 20px;
+  height: 50px;
+  width: 50px;
+  text-align: center;
+  /* line-height: ; */
+
+
+/* .menu-gauche ul {
+  margin-top: 20px;
+}  */
+
+/* .menu-gauche ul li {
+  position: relative;
+  height: 50px;
+  width: 100%;
+  margin: 40px 5px ;
+  list-style: none;
+  line-height: 10px;
+
 }
 
-.icone-vertical-menu {
-  width: 60%;
+.menu-gauche ul li a{
+  color: black;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  font-size: 25px;
+  transition: all 0.4s ease;
+  border-radius: 12px;
 }
+
+.menu-gauche ul li a i{
+ height: 50px;
+ min-width: 50px;
+ border-radius: 12px;
+ line-height: 50px;
+ text-align: center;
+}
+
+.menu-gauche ul li a:hover{
+  color: aquamarine;
+  background-color: azure;
+}
+
+.menu-gauche ul li input {
+   color: black;
+   position: absolute;
+   height: 100%;
+   width: 100%;
+   left: 0;
+   top: 0; 
+   border-radius: 12px;
+   outline: none;
+   border: none;
+   background-color: #56BCA7;
+   padding-left: 50px;
+   font-size: 18px;
+   color: aqua;
+} 
+
+.menu-gauche ul li .bx-search-alt {
+   position: absolute;
+   top: 18%;
+   z-index: 99;
+   font-size: 35px;
+}  */
+
+/* PROFIL OCEANE  */
+
+
+
+
+
+
+
+
+
+
+
+/* PROFIL DROIT  */
+
+.profil {
+  background-color: white;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  
+  
+}
+
+.margin {
+  padding: 30px;
+  display: flex;
+}
+
+.profil .container-gauche {
+  background-color: blanchedalmond;
+  height: 670px;
+  width: 100%;
+  padding: 100px;
+  float: left;
+  
+}
+
+.profil .container-gauche .informations {
+  align-items: center;
+  text-align: center;
+  line-height: 60px;
+}
+
+/* PROFIL DGAUCHE  */
+
+.profil .container-droit {
+  background-color: blanchedalmond;
+  padding-left: 70%;
+  height: auto;
+
+  margin-left: 5px;
+}
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+

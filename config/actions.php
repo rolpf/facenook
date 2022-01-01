@@ -12,5 +12,7 @@ $listeDesActions = array(
     "profil" => "actions/profil.php",
     "timeline" => "actions/timeline.php",
     "postingT" => "actions/postingT.php",
+    "recherche" => "actions/recherche.php",
+    "rechercheT" => "actions/rechercheT.php",
 
 );

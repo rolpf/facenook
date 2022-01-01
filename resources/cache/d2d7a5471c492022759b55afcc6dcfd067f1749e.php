@@ -4,21 +4,23 @@
 
 <div class="formulaire">
 
-  <img src="css/img/feuille.png" class="logo"> 
-
-<form action='index.php?action=loginT' method='POST'>
-  
+<form class="form_log" action='index.php?action=loginT' method='POST'>
+<img src="css/img/feuille.png" class="logo"> 
 
   <legend>Connexion</legend>
 
-  <input type='text' name='user' placeholder='identifiant' id="login">
-  <input type='password' name='mdp' placeholder='Mot de passe' id="password">
+  <input type='text' class="btn" name='user' placeholder='identifiant' >
+  <input type='password' class="btn"name='mdp' placeholder='Mot de passe' >
 
   <!-- <label for="rememberme"> Se souvenir de moi ?</label>
   <input type="checkbox" id="rememberme" name="rememberme" value="rememberme" class="rememberme"> -->
   
   
+<<<<<<< HEAD
   <input type='submit' name='connecter' value='Connexion'id='submit'>
+=======
+  <input type='submit' class="btn-submit" name='connecter' value='Connexion'>
+>>>>>>> master
 
 </form>
 </div>
