@@ -16,11 +16,8 @@
   <input type="checkbox" id="rememberme" name="rememberme" value="rememberme" class="rememberme"> -->
   
   
-<<<<<<< HEAD
-  <input type='submit' name='connecter' value='Connexion'id='submit'>
-=======
+  <!--<input type='submit' name='connecter' value='Connexion'id='submit'>-->
   <input type='submit' class="btn-submit" name='connecter' value='Connexion'>
->>>>>>> master
 
 </form>
 </div>

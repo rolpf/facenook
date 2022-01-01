@@ -29,15 +29,13 @@
     </div>
 <?php endif; ?>
 <?php if(isset($_SESSION['id'])): ?>
-<nav class="vertical-menu">
-    <a href="index.php?action=timeline"><img src="css/img/icon_home.png" alt="Accueil" class="icone-vertical-menu"></a>
 
 
          <!-- <a href='index.php?action=profil&id=
           <?php //echo$_SESSION['id'] ?>
          '>Profil</a>  -->
 
-        <a href="index.php?action=page2"><img src="css/img/icon_people.png" alt="AjoutAmi" class="icone-vertical-menu"></a>
+      
     <?php endif; ?>
 
 
