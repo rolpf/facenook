@@ -35,7 +35,7 @@
 
         foreach($displayMessage as $row) {
             echo '<div class="display_message">
-                    <div class="infos_message">'.$row['id'].'<p class="date_message">'.$row['dateEcrit'].'</p></div>
+                    <div class="infos_message">'.$row['login'].'<p class="date_message">'.$row['dateEcrit'].'</p></div>
                     <p>'.$row['contenu'].'</p>
             </div>
             ';
