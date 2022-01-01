@@ -62,7 +62,7 @@
             <div class="navbar-links">
                 <ul>
                     <li>
-                        <a href="index.php">accueil</a>
+                        <a href="index.php?action=timeline">accueil</a>
                     </li>
 
                     <li>

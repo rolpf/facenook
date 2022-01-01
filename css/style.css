@@ -555,11 +555,56 @@ legend {
 
 .profil .container-droit {
   background-color: blanchedalmond;
-  padding-left: 70%;
-  height: auto;
-
-  margin-left: 5px;
+  padding-right: 40%;
+  margin-left: 15px;
+  width: 1040px;
 }
+
+ .post-ultisateur {
+  margin-left: 0%;
+ }
+
+/* LES POSTS  */
+
+.post-ultisateur {
+ padding: 16px;
+}
+
+.post-ultisateur p{
+  font-size: 20px;
+  padding-bottom: 15px;
+}
+
+.content-post {
+  border: none;
+  padding-right: 200%;
+  height: 80px;
+}
+
+
+.btn-post {
+  background-color: #DE8E4F;
+  border: none;
+  margin-top: 20px;
+  padding : 8px 16px; 
+  width: 90px;
+  border-radius: 5px;
+  white-space: nowrap;
+}
+
+.btn-post:hover {
+  color: white;
+}
+
+hr.solid {
+  border-top: 2px solid black;
+  margin-left: 20px;
+  margin-top: 5px;
+  width: 1000px;
+
+}
+
+
 
 
 
