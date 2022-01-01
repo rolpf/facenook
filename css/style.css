@@ -271,7 +271,8 @@ legend {
 }
 
 .right-contener {
-  float: right;
+
+
   height: 700px;
   width: 800px;
 }
@@ -280,6 +281,123 @@ legend {
 /* div avec les pseudos  */
 
 
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #56BCA7;
+  color: aliceblue;
+  padding: 30px 10% ;
+}
+
+.logo-nav {
+  cursor: pointer;
+  font-size: 30px;
+}
+
+.navbar-links ul {
+  display: flex;
+  
+}
+
+.navbar-links li {
+ list-style: none;
+}
+
+.navbar-links li a {
+  transition:  all 0.3s ease 0s;
+  color:  white;
+  text-decoration: none;
+  text-transform: uppercase;
+  display: block;
+  padding: 1rem;
+  font-size: 30px;
+}
+
+.btn-nav button {
+  padding: .9rem 3rem;
+  background-color: red;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition:  all 0.3s ease 0s;
+  color: aliceblue;
+  display: f;
+}
+
+.navbar-links li a:hover {
+  color: aqua;
+}
+
+
+.toggle-btn {
+  position:absolute ;
+  top : .75rem;
+  right: 1rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+}
+
+.toggle-btn .bar {
+  height: 3px;
+  width: 100%;
+  background-color: white;
+  border-radius: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 900px) {
+  .toggle-btn {
+      display: flex;
+  }
+
+  .navbar-links {
+      width: 100%;
+  }
+
+  .navbar {
+      flex-direction: column;
+      align-items: flex-start;
+  } 
+
+  .navbar-links ul {
+      width: 100%;
+      flex-direction: column;
+  }
+
+  .navbar-links li {
+      text-align: center;
+  }
+
+  .navbar-links li a {
+      padding: .5rem 1rem;
+  }
+
+
+  .navbar-links .active {
+      display: flex;
+  }
+
+  .btn-nav button {
+      
+      flex-direction: column;
+      align-items: flex-start;
+  }
+
+}
 
 
 
@@ -289,7 +407,7 @@ legend {
 
 /* MENU PROFIL : Oceane  */
 
-.menu-gauche {
+/* .menu-gauche {
   height: 100%;
   top:  0;
   left: 0;
@@ -328,13 +446,13 @@ legend {
   width: 50px;
   text-align: center;
   /* line-height: ; */
-}
 
-.menu-gauche ul {
+
+/* .menu-gauche ul {
   margin-top: 20px;
-} 
+}  */
 
-.menu-gauche ul li {
+/* .menu-gauche ul li {
   position: relative;
   height: 50px;
   width: 100%;
@@ -388,29 +506,13 @@ legend {
    top: 18%;
    z-index: 99;
    font-size: 35px;
-} 
+}  */
 
 /* PROFIL OCEANE  */
 
-.profil {
-  background-color: #57BCA8;
-  margin-left: 300px;
-  height: 108vh;
-  top:  1;
-  display: flex;
-}
 
 
 
-.container-gauche {
-  background-color: #DE8E4F;
-  padding: 70px;
-  float: left;
-}
-
-.container-gauche  .informations-utilisateur p {
-  padding-top: 20px;
-}
 
 
 
@@ -420,21 +522,45 @@ legend {
 
 /* PROFIL DROIT  */
 
-.container-droit {
-  background-color: aqua;
-  border-radius: 5px;
+.profil {
+  background-color: white;
+  width: 100%;
   height: auto;
-  padding : 8px 16px; 
+  overflow: hidden;
+  
+  
 }
 
-.container-droit .ecrire-post h6{
-  font-size: 20px;
+.margin {
+  padding: 30px;
+  display: flex;
 }
 
-.container-droit .ecrire-post p{
-  border: 1px solid black;
-
+.profil .container-gauche {
+  background-color: blanchedalmond;
+  height: 670px;
+  width: 100%;
+  padding: 100px;
+  float: left;
+  
 }
+
+.profil .container-gauche .informations {
+  align-items: center;
+  text-align: center;
+  line-height: 60px;
+}
+
+/* PROFIL DGAUCHE  */
+
+.profil .container-droit {
+  background-color: blanchedalmond;
+  padding-left: 70%;
+  height: auto;
+
+  margin-left: 5px;
+}
+
 
 
 

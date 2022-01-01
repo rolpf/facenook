@@ -16,7 +16,7 @@
 </head>
 
 <body>
-<header></header>
+
 
 
 
@@ -40,7 +40,7 @@
           <?php //echo$_SESSION['id'] ?>
          '>Profil</a>  -->
 
-        <!-- <a href="index.php?action=page2"><img src="css/img/icon_people.png" alt="AjoutAmi" class="icone-vertical-menu"></a> --> -->
+        <!-- <a href="index.php?action=page2"><img src="css/img/icon_people.png" alt="AjoutAmi" class="icone-vertical-menu"></a> --> 
     <?php endif; ?>
 
 
@@ -53,7 +53,42 @@
 
 
 
-        
+<header>
+        <nav class="navbar">
+            <div class="logo-nav">
+                <p>Facenook</p>
+            </div>
+
+            <a href="#" class="toggle-btn">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </a>
+
+            <div class="navbar-links">
+                <ul>
+                    <li>
+                        <a href="index.php">accueil</a>
+                    </li>
+
+                    <li>
+                        <a href="index.php?action=page2">Amis</a>
+                    </li>
+
+                    <li>
+                        <a href="index.php?action=profil&id=<?php echo$_SESSION['id']?>">Profil</a>
+                    </li>
+
+                    <li>
+                        <a href="#">Feed</a>
+                    </li>
+
+                </ul>
+                    
+            </div>
+            <a class="btn-nav" href="index.php?action=deconnexion"><button>Déconnexion</button></a>
+        </nav>
+    </header>
 
 
 
@@ -68,7 +103,7 @@
 
 
 
-<div class="menu-gauche">
+<!-- <div class="menu-gauche">
     <div class="logo-content">
         <div class="logo-menu">
             <div class="logo_name">Facenook</div>
@@ -128,7 +163,7 @@
             </ul>
 
     </div>
-</div> 
+</div>  -->
 
 
 
@@ -141,13 +176,13 @@
 
 
 
-    <div class="searchbar">
+    <!-- <div class="searchbar">
     <form action="index.php" method="GET"> 
     <input type='hidden' name='action' value='recherche'>
       <input name="recherche" type="text" placeholder="Chercher un utilisateur">
       <button type="submit"><i class="fa fa-search"></i></button>
     </form>
-  </div>   
+  </div>    -->
     <?php endif; ?>
 
 <main class="container">
