@@ -6,7 +6,7 @@
                 <div class="informations">
                     <h1>Mon profil</h1>
                     <img src="css/img/pp.png">
-                    <p>Nombre d'amis : </p>
+                    <p>Nombre d'amis :: </p>
                 </div>
                
             </div>
