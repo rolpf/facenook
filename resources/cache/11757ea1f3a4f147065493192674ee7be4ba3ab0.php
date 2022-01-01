@@ -25,7 +25,6 @@
         // pour afficher les messages postés par les amis
         $sql="SELECT * from ecrit JOIN user ON user.id=ecrit.idAuteur WHERE ecrit.idAuteur=? ORDER BY dateEcrit DESC";
         // id, contenu, dateEcrit, image, idAuteur, idAmi
-        // comment afficher le pseudo ?
         $query = $pdo->prepare($sql);
         $query->execute(array($idUser));
         $displayMessage = $query->fetchAll();
