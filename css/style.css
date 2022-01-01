@@ -437,3 +437,13 @@ border-radius: 50px;
 .btn-ajoutAmi {
     background-color: #57BCA8;
 }
+
+/* Demandes d'amis */
+
+.btn-gestion {
+  display:flex;
+  background-color: #57BCA8;
+  color: #867B67;
+  border: 2px solid black;
+  text-decoration: none;
+}

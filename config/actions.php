@@ -14,5 +14,7 @@ $listeDesActions = array(
     "rechercheT" => "actions/rechercheT.php",
     "demandeami" => "actions/demandeami.php",
     "ajoutami" => "actions/ajoutami.php",
+    "accepteami" => "actions/accepteami.php",
+    "refusami" => "actions/refusami.php",
 
 );

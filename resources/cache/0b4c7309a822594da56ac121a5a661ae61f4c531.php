@@ -21,10 +21,9 @@
                 $demandeAmi = $query->fetchAll(); // table utilisateur
 
                 foreach($demandeAmi as $parcoursDemande) {
-                    echo $parcoursDemande['login'] .'<button>Accepter</button><button>Refuser</button><br>';
-
-                }
-
+                    echo '<div class="btn-gestion">'.$parcoursDemande['login'] ."<a class='btn-gestion' href='index.php?action=accepteami&id=". $parcoursDemande['id']."'method='GET'>Accepter</a><a class='btn-gestion' href='index.php?action=refusami&id=". $parcoursDemande['id']."'method='GET'>Refuser</a>
+                      <button class='btn-gestion'>Refuser</button></form></div>";
+                    }
                 }
                 ?>
 

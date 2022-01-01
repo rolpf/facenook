@@ -7,16 +7,21 @@
 
         <div class="profil">
         <h1 class="title-page">Profil</h1>
+            <?php if(isset($_SESSION['id'])): ?>
+            <h2><?php echo e($_SESSION['login']); ?></h2>
             <div bio>
                 <img class="pdp" src="">
                     <ul>
                         
                     </ul>
             </div>
+            <?php endif; ?>
             <?php
                     include("config/bd.php");
                     include("config/actions.php");
-                
+    
+
+
                 if (isset($_GET['id']) && $_GET['id']>0) {
                     $sql = 'select id, login, avatar from user where id=?';
                     $query = $pdo->prepare($sql);
@@ -32,10 +37,12 @@
                     $query2->execute(array($affichageProfil['id'],$_SESSION['id'] , $_SESSION['id'] ,$affichageProfil['id']));
                     $verifLien = $query2->fetch(); // array php
 
-                    if ($verifLien['etat'] == 'attente'){ // probleme si le tableau est vide, trying to access array offset on value of type bool
+                    if (($verifLien['etat'] == 'attente')){ // probleme si le tableau est vide, trying to access array offset on value of type bool
                         echo "<br> Demande en attente";
-                    } else if($verifLien['etat'] == 'amis'){
-                        echo "Display profile info";
+                    } else if($verifLien['etat'] == 'ami'){
+                        echo"affichage infos ami";
+                    } else if ($verifLien['etat'] == 'block'){
+                        echo "Vous êtes bloqué.";
                     } else{
                     //if(isset()) // verifier que les deux personnes ne soient pas déjà amies, ou alors que la demande n'est pas en attente 
                     echo "<a href='index.php?action=demandeami&id=".$affichageProfil['id']."'method='GET'>Ajouter en ami</a>"; // met l'id dans l'url
