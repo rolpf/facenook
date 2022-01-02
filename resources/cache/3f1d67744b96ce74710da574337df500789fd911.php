@@ -18,7 +18,7 @@
 
                     foreach($searchResult as $row) {
                         echo "<div class='resultatRecherche'>
-                        <a href='#'>". $row['login'] ."</a> </div>";
+                        <a href='index.php?action=profil&id=".$row['id']."'>". $row['login'] ."</a> </div>";
                     }
 
                 ?>  
