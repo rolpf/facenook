@@ -271,15 +271,12 @@ legend {
 }
 
 .right-contener {
-
-
   height: 700px;
   width: 800px;
 }
 
 
 /* div avec les pseudos  */
-
 
 .navbar {
   display: flex;
@@ -310,19 +307,22 @@ legend {
   text-decoration: none;
   text-transform: uppercase;
   display: block;
-  padding: 1rem;
+  padding: 4rem;
   font-size: 30px;
 }
 
 .btn-nav button {
-  padding: .9rem 3rem;
-  background-color: red;
   border: none;
-  border-radius: 50px;
-  cursor: pointer;
-  transition:  all 0.3s ease 0s;
-  color: aliceblue;
-  display: f;
+  outline: none;
+  text-decoration: none;
+}
+
+.btn-nav i{
+  font-size: 53px;
+  background-color: #56BCA7;
+  border: none;
+  outline: none;
+  color: white;
 }
 
 .navbar-links li a:hover {
@@ -346,6 +346,25 @@ legend {
   width: 100%;
   background-color: white;
   border-radius: 10px;
+}
+
+.searchbar {
+  background-color: #DE8E4F;
+  padding: 10px;
+  border-radius: 15px;
+  outline: none;
+  margin-top: 37px;
+}
+.searchbar-rr {
+  background-color: #DE8E4F;
+  border: none;
+  border-radius: 5px;
+  padding: 3px;
+  outline: none;
+}
+.searchbar .btn-searchbar{
+  border: none;
+  background-color: #DE8E4F;
 }
 
 
@@ -596,13 +615,16 @@ legend {
   color: white;
 }
 
+/* La barre qui permet de séparer  */
+
 hr.solid {
   border-top: 2px solid black;
   margin-left: 20px;
   margin-top: 5px;
   width: 1000px;
-
 }
+
+
 
 
 
