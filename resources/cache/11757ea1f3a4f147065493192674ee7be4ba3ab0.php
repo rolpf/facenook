@@ -34,6 +34,9 @@
             echo '<div class="display_message">
                     <div class="infos_message">'.$row['login'].'<p class="date_message">'.$row['dateEcrit'].'</p></div>
                     <p>'.$row['contenu'].'</p>
+                    <form action="index.php?action=supprPostT" method="POST">
+                    <button>Supprimer</button>
+                    </form
             </div>
             ';
         }

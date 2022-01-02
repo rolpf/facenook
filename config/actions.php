@@ -14,5 +14,6 @@ $listeDesActions = array(
     "postingT" => "actions/postingT.php",
     "recherche" => "actions/recherche.php",
     "rechercheT" => "actions/rechercheT.php",
+    "supprPostT" => "actions/supprPostT.php",
 
 );
