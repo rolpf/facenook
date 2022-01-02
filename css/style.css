@@ -14,7 +14,6 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /*padding-top: 25px;
     /*padding-top: 25px;*/
     /* background-color :#F9F5E4; */
     background-size: cover;
@@ -64,7 +63,7 @@ nav {
 /* FORMULAIRE CONNEXION & INSCRIPTION */
 .form_log { 
   background-color: #DE8E4F;
-  border-radius: 50px;  
+  border-radius: 50px;   
   align-self: center; 
   text-align: center;
   width: 35%;  
@@ -72,9 +71,25 @@ nav {
   align-items: center;
   position: relative;
   display: flex;
-  flex-direction: column; /* tous les éléments se mettent en colomnne */
+  flex-direction: column;
   padding-bottom: 40px;
+  margin-top: 120px;
   }
+
+.form_inscri {
+  background-color: #DE8E4F;
+  border-radius: 50px;   
+  align-self: center; 
+  text-align: center;
+  width: 35%;  
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 40px;
+  margin-top: 45px;
+}
 
 legend {
   font-size: 50px;
@@ -272,15 +287,12 @@ legend {
 }
 
 .right-contener {
-
-
   height: 700px;
   width: 800px;
 }
 
 
 /* div avec les pseudos  */
-
 
 .navbar {
   display: flex;
@@ -311,19 +323,23 @@ legend {
   text-decoration: none;
   text-transform: uppercase;
   display: block;
-  padding: 1rem;
+  padding: 4rem;
   font-size: 30px;
 }
 
 .btn-nav button {
-  padding: .9rem 3rem;
-  background-color: red;
   border: none;
-  border-radius: 50px;
-  cursor: pointer;
-  transition:  all 0.3s ease 0s;
-  color: aliceblue;
-  display: f;
+  outline: none;
+  text-decoration: none;
+}
+
+.btn-nav i{
+  font-size: 50px;
+  background-color: #56BCA7;
+  border: none;
+  outline: none;
+  color: white;
+  margin-top: 3px;
 }
 
 .navbar-links li a:hover {
@@ -347,6 +363,40 @@ legend {
   width: 100%;
   background-color: white;
   border-radius: 10px;
+}
+
+.searchbar {
+  background-color: #DE8E4F;
+  padding: 10px;
+  border-radius: 15px;
+  outline: none;
+  margin-top: 37px;
+}
+.searchbar-rr {
+  background-color: #DE8E4F;
+  border: none;
+  border-radius: 5px;
+  padding: 3px;
+  outline: none;
+}
+.searchbar .btn-searchbar{
+  border: none;
+  background-color: #DE8E4F;
+}
+
+.searchbar input{
+  background-color: #DE8E4F;
+  border: none;
+}
+
+.searchbar {
+  background-color: #DE8E4F;
+  border: none;
+}
+
+.searchbar button {
+  background-color: #DE8E4F;
+  border: none;
 }
 
 
@@ -398,157 +448,25 @@ legend {
       align-items: flex-start;
   }
 
-}
-
-
-
-
-
-/* LE NOUVEAU CSS DU PROFIL */
-
-/* MENU PROFIL : Oceane  */
-
-/* .menu-gauche {
-  height: 100%;
-  top:  0;
-  left: 0;
-  width: 300px;
-  background-color: #FFF8E5;
-  position: fixed;
-  padding: 6px 14px;
-  border-right: 6px solid black;
+.profil {
+  width: 100%;
   
 }
 
-.menu-gauche .logo-content .logo {
-  color: blueviolet;
-  display: flex;
-  height: 50px;
-  width: 100%;
-  align-items: center;
-  padding-top: 50px;
+.profil .margin{
+  flex-direction: column;
+  width: auto;
 }
 
-.logo-content .logo-menu .logo_name {
-  font-size: 40px;
-  font-weight: 400;
-  text-align: center;
-  padding-top: 30px;
-  font-family: 'Montserrat';
-}
-
-.menu-gauche #btn {
-  position: absolute;
-  color: aqua;
-  left: 90%;
-  top: 6px;
-  font-size: 20px;
-  height: 50px;
-  width: 50px;
-  text-align: center;
-  /* line-height: ; */
-
-
-/* .menu-gauche ul {
+.profil .container-droit {
   margin-top: 20px;
-}  */
+}
 
-/* .menu-gauche ul li {
-  position: relative;
-  height: 50px;
-  width: 100%;
-  margin: 40px 5px ;
-  list-style: none;
-  line-height: 10px;
 
 }
 
-.menu-gauche ul li a{
-  color: black;
-  display: flex;
-  align-items: center;
-  text-decoration: none;
-  font-size: 25px;
-  transition: all 0.4s ease;
-  border-radius: 12px;
-}
-
-<<<<<<< HEAD
-
-/* BOUTON AJOUT AMI */
-
-.resultatRecherche a {
-  padding: 10px 10px;
-  text-decoration: none;
-  color: black;
-  font-size: 170%;
-}
-
-.resultatRecherche a:hover {
-  color: #867B67;
-}
-
-.btn-ajoutAmi {
-    background-color: #57BCA8;
-}
-
-/* Demandes d'amis */
-
-.btn-gestion {
-  display:flex;
-  background-color: #57BCA8;
-  color: #867B67;
-  border: 2px solid black;
-  text-decoration: none;
-}
-=======
-.menu-gauche ul li a i{
- height: 50px;
- min-width: 50px;
- border-radius: 12px;
- line-height: 50px;
- text-align: center;
-}
-
-.menu-gauche ul li a:hover{
-  color: aquamarine;
-  background-color: azure;
-}
-
-.menu-gauche ul li input {
-   color: black;
-   position: absolute;
-   height: 100%;
-   width: 100%;
-   left: 0;
-   top: 0; 
-   border-radius: 12px;
-   outline: none;
-   border: none;
-   background-color: #56BCA7;
-   padding-left: 50px;
-   font-size: 18px;
-   color: aqua;
-} 
-
-.menu-gauche ul li .bx-search-alt {
-   position: absolute;
-   top: 18%;
-   z-index: 99;
-   font-size: 35px;
-}  */
 
 /* PROFIL OCEANE  */
-
-
-
-
-
-
-
-
-
-
 
 /* PROFIL DROIT  */
 
@@ -557,8 +475,6 @@ legend {
   width: 100%;
   height: auto;
   overflow: hidden;
-  
-  
 }
 
 .margin {
@@ -585,7 +501,7 @@ legend {
 
 .profil .container-droit {
   background-color: blanchedalmond;
-  padding-right: 40%;
+  padding-right: 20%;
   margin-left: 15px;
   width: 1040px;
 }
@@ -626,33 +542,23 @@ legend {
   color: white;
 }
 
+/* La barre qui permet de séparer  */
+
 hr.solid {
   border-top: 2px solid black;
   margin-left: 20px;
   margin-top: 5px;
   width: 1000px;
-
 }
 
+/* TIMELINE */
 
+.container-tl {
+  background-color: #F9F5E4;
+}
 
-
-
-
-
-
-
- 
-
-
-
-
-
-
-
-
-
-
-
-
->>>>>>> master
+.timeline {
+  padding-top: 2%;
+  margin-left:20%;
+  
+}

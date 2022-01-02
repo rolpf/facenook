@@ -7,10 +7,23 @@
             <div class="container-gauche">
                 <div class="informations">
                     <h1>Profil</h1>
+                    <?php
+                            include("config/bd.php");
+                            include("config/actions.php");
+                
+                    if (isset($_GET['id']) && $_GET['id']>0) {
+                    $sql = 'select id, login, avatar from user where id=?';
+                        $query = $pdo->prepare($sql);
+                        $query->execute(array($_GET['id']));
+                        $affichageProfil = $query->fetch(); // un array php
+                        // id, login, avatar
+                        echo "<p>Page de ". $affichageProfil['login']."<br></p>";
+                    } else {
+                    echo "<p>Page de ". $_SESSION['login']."<br></p>";
+                    }
+                    ?>
                     <img src="css/img/pp.png">
-                    <p>Nombre d'amis :: </p>
                 </div>
-               
             </div>
 
             <div class="container-droit">
@@ -57,8 +70,6 @@
             <?php
                     include("config/bd.php");
                     include("config/actions.php");
-    
-
 
                 if (isset($_GET['id']) && $_GET['id']>0) {
                     $sql = 'select id, login, avatar from user where id=?';
@@ -67,7 +78,6 @@
                     $affichageProfil = $query->fetch(); // un array php
                     // id, login, avatar
                     //if ($_POST['id'] != $_GET['id']& ) {
-                    echo "Page de ". $affichageProfil['login']."<br>";
 
                     $sqlverifLien = 'select * from lien where (idUtilisateur1=? AND idUtilisateur2=?) OR (idUtilisateur1=? AND idUtilisateur2=?)';
                     $query2 = $pdo->prepare($sqlverifLien);
@@ -75,6 +85,8 @@
                     $query2->execute(array($affichageProfil['id'],$_SESSION['id'] , $_SESSION['id'] ,$affichageProfil['id']));
                     $verifLien = $query2->fetch(); // array php
 
+
+                    if ($verifLien['etat'] != false){
                     if (($verifLien['etat'] == 'attente')){ // probleme si le tableau est vide, trying to access array offset on value of type bool
                         echo "<br> Demande en attente";
                     } else if($verifLien['etat'] == 'ami'){
@@ -93,6 +105,7 @@
                     echo "<a href='index.php?action=demandeami&id=".$affichageProfil['id']."'method='GET'>Ajouter en ami</a>"; // met l'id dans l'url
                 //}
                     }
+                }
 
                     
 

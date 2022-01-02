@@ -1,17 +1,12 @@
 <?php $__env->startSection('content'); ?>
-    <section class="container-profil">
-        <div class="menu-gauche">
-            <h3></h3>
-
-        </div>
-
-        <div class="profil">
+    <section class="container-tl">
+        <div class="timeline">
         <h1 class="text-timeline">Accueil</h1>
         <div class="poster">
             <form action="index.php?action=postingT" method="POST">
             <p>Quoi de neuf ?</p>
             <input type="text" name="newPost">
-            <input type="submit" name="buttonNewPost" value="Poster">
+            <input class="btn-post" type="submit" name="buttonNewPost" value="Poster">
             </form>
             </div>
 

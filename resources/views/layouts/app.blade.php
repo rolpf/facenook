@@ -86,7 +86,7 @@
                 </ul>
                     
             </div>
-            <a class="btn-nav" href="index.php?action=deconnexion"><button>Déconnexion</button></a>
+            <a class="btn-nav" href="index.php?action=deconnexion"><i class='bx bx-log-out'></i></a>
         </nav>
     </header>
 
