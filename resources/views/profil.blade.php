@@ -1,16 +1,52 @@
 @extends('layouts.app')
 
 @section('content')
-    <section class="container-profil">
-        <div class="menu-gauche">
-            <h3></h3>
+     
+<section class="profil">
+        <div class="margin">
+            <div class="container-gauche">
+                <div class="informations">
+                    <h1>Profil</h1>
+                    <img src="css/img/pp.png">
+                    <p>Nombre d'amis :: </p>
+                </div>
+               
+            </div>
 
-        </div>
+            <div class="container-droit">
+                            <div class="post-ultisateur">
+                                <form action="index.php?action=postingT" method="POST">
+                                <p>Quoi de neuf ?</p>
+                                <textarea name="newPost" class="content-post"> </textarea>
+                                <input type="submit" name="buttonNewPost" value="Poster" class="btn-post">
+                             </form>
+                            </div>
+
+                            <hr class="solid"> 
+
+                            <div>
+
+                            </div>
+
+                            <?php
+        include("config/bd.php");
+        include("config/actions.php");
+        //include("config/blade.php");
+        $idUser = $_SESSION['id']; // ça c'est pour afficher les msg sur la "timeline" de la personne"
+        //$sql="SELECT * from ecrit WHERE idAuteur IN (SELECT user.id FROM user ) ORDER BY dateEcrit DESC";
+        // ne pas oublier de changer la requête lorsqu'on aura créé les liens entre utilisateurs
+        // pour afficher les messages postés par les amis
+        $sql="SELECT * from ecrit JOIN user ON user.id=ecrit.idAuteur WHERE ecrit.idAuteur=? ORDER BY dateEcrit DESC";
+        // id, contenu, dateEcrit, image, idAuteur, idAmi
+        $query = $pdo->prepare($sql);
+        $query->execute(array($idUser));
+        $displayMessage = $query->fetchAll();
+        ?>
+        
 
         <div class="profil">
         <h1 class="title-page">Profil</h1>
             @isset($_SESSION['id'])
-            <h2>{{$_SESSION['login']}}</h2>
             <div bio>
                 <img class="pdp" src="">
                     <ul>
@@ -43,6 +79,13 @@
                         echo "<br> Demande en attente";
                     } else if($verifLien['etat'] == 'ami'){
                         echo"affichage infos ami";
+                        foreach($displayMessage as $row) {
+                            echo '<div class="display_message">
+                                    <div class="infos_message">'.$row['login'].'<p class="date_message">'.$row['dateEcrit'].'</p></div>
+                                    <p>'.$row['contenu'].'</p>
+                            </div>
+                            ';
+                        }
                     } else if ($verifLien['etat'] == 'block'){
                         echo "Vous êtes bloqué.";
                     } else{
@@ -55,16 +98,19 @@
 
 
             }
-                ?>
+             ?>
+            
+        </div>     
+            </div>
+
+            
+
             
         </div>
+   
+</section>
+       
 
-        <div class="menu-droite">
-            
-
-        </div>
-
-
-
-    </section>
+                
+ 
 @endsection

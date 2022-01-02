@@ -10,11 +10,14 @@ $listeDesActions = array(
     "signin" => "actions/signin.php", // inscription
     "creationT" => "actions/creationT.php",
     "profil" => "actions/profil.php",
+    "timeline" => "actions/timeline.php",
+    "postingT" => "actions/postingT.php",
     "recherche" => "actions/recherche.php",
     "rechercheT" => "actions/rechercheT.php",
     "demandeami" => "actions/demandeami.php",
     "ajoutami" => "actions/ajoutami.php",
     "accepteami" => "actions/accepteami.php",
     "refusami" => "actions/refusami.php",
+    "supprPostT" => "actions/supprPostT.php",
 
 );

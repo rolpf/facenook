@@ -1,11 +1,7 @@
 <?php $__env->startSection('content'); ?>
     <section class="container-profil">
-        <div class="menu-gauche">
-            <h3></h3>
 
-        </div>
-
-        <div class="profil">
+       
         <h1 class="title-page">Demandes d'amis</h1>
         <?php
             include("config/bd.php");
