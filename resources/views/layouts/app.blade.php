@@ -72,9 +72,15 @@
                     <li>
                         <a href="index.php?action=profil&id=<?php echo$_SESSION['id']?>">Profil</a>
                     </li>
-
+                    
                     <li>
-                        <a href="#">Feed</a>
+                    <div class="searchbar">
+                    <form action="index.php" method="GET"> 
+                        <input type='hidden' name='action' value='recherche'>
+                        <input name="recherche" type="text" placeholder="Chercher un utilisateur">
+                        <button type="submit"> <i class='bx bx-search-alt' ></i></button>
+                    </form>
+                </div>  
                     </li>
 
                 </ul>
