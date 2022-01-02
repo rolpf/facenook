@@ -1,7 +1,7 @@
 <?php $__env->startSection('content'); ?>
 <div class="inscription" id="inscription"> 
  
-    <form class="form_log" action="index.php?action=creationT" method="post" enctype="multipart/form-data">
+    <form class="form_inscri" action="index.php?action=creationT" method="post" enctype="multipart/form-data">
     <img class="logo" src="css/img/feuille.png">  
       <legend>Inscription</legend>
         <input type='text' class="btn"  name='user' placeholder='Identifiant'>

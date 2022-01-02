@@ -61,16 +61,16 @@
 
             <div class="navbar-links">
                 <ul>
-
-                    <li>
-                        <div class="searchbar">
-                        <form action="index.php" method="GET"> 
-                            <input type='hidden' name='action' value='recherche' >
-                            <input name="recherche" type="text" placeholder="Chercher un utilisateur" class="searchbar-rr">
-                            <button type="submit" class="btn-searchbar"> <i class='bx bx-search-alt' ></i></button>
-                        </form>
-                    </div>  
-                        </li>
+                    
+                <li>
+                    <div class="searchbar">
+                    <form action="index.php" method="GET"> 
+                        <input type='hidden' name='action' value='recherche'>
+                        <input name="recherche" type="text" placeholder="Chercher un utilisateur">
+                        <button type="submit"> <i class='bx bx-search-alt' ></i></button>
+                    </form>
+                </div>  
+                    </li>
 
                     <li>
                         <a href="index.php?action=timeline">accueil</a>
@@ -83,18 +83,18 @@
                     <li>
                         <a href="index.php?action=profil&id=<?php echo$_SESSION['id']?>">Profil</a>
                     </li>
+                    
+                   
 
                     <li>
                         <a class="btn-nav" href="index.php?action=deconnexion">
-                            <button><i class='bx bxs-door-open' ></i></button></a>
+                        <button></button><i class='bx bx-log-out'></i></a>
                     </li>
-                    
-                    
 
                 </ul>
                     
             </div>
-            <!-- <a class="btn-nav" href="index.php?action=deconnexion"><button>Déconnexion</button></a> -->
+            
         </nav>
     </header>
 
