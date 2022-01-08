@@ -85,8 +85,8 @@
                     $query2->execute(array($affichageProfil['id'],$_SESSION['id'] , $_SESSION['id'] ,$affichageProfil['id']));
                     $verifLien = $query2->fetch(); // array php
 
-
-                    if ($verifLien['etat'] != false){
+                    if ($_GET['id']!=$_SESSION['id']){
+                    //if ($verifLien['etat'] != false){
                     if (($verifLien['etat'] == 'attente')){ // probleme si le tableau est vide, trying to access array offset on value of type bool
                         echo "<br> Demande en attente";
                     } else if($verifLien['etat'] == 'ami'){

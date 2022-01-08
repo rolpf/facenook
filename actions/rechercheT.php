@@ -10,7 +10,7 @@ if (isset($_GET['recherche']) && !empty($_GET['recherche'])) {
     //$sqlConnect = "select * from user where login LIKE %$recherche%";
    $sql= "select * from user where login LIKE ?";
     $query = $pdo->prepare($sql);
-    $query->execute(array($_GET['recherche']));
+    $query->execute(array("%".$recherche."%");
     $searchResult = $query->fetch();
  
     var_dump($searchResult);

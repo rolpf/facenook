@@ -19,8 +19,8 @@
                 $demandeAmi = $query->fetchAll(); // table utilisateur
 
                 foreach($demandeAmi as $parcoursDemande) {
-                    echo '<div class="btn-gestion">'.$parcoursDemande['login'] ."<a class='btn-gestion' href='index.php?action=accepteami&id=". $parcoursDemande['id']."'method='GET'>Accepter</a><a class='btn-gestion' href='index.php?action=refusami&id=". $parcoursDemande['id']."'method='GET'>Refuser</a>
-                      <button class='btn-gestion'>Refuser</button></form></div>";
+                    echo '<div class="search-result">'.$parcoursDemande['login'] ."<a class='btn-post' href='index.php?action=accepteami&id=". $parcoursDemande['id']."'method='GET'>Accepter</a><a class='btn-post' href='index.php?action=refusami&id=". $parcoursDemande['id']."'method='GET'>Refuser</a>
+                      </form></div>";
                     }
                 }
                 ?>
